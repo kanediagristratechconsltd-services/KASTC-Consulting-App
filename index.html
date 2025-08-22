@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C00', // KANEDI Orange
+                        secondary: '#228B22', // KANEDI Green
+                        accent: '#FFD700', // KANEDI Yellow/Gold
+                        lightGreen: '#9ACD32' // Light green from logo
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="relative">
+                        <!-- Logo-inspired design -->
+                        <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-6 h-6 bg-accent rounded-full opacity-80"></div>
+                            <div class="z-10 flex items-center justify-center">
+                                <span class="text-white font-bold text-xs">KASTC</span>
+                            </div>
+                            <div class="absolute bottom-1 left-1 right-1 h-2 bg-secondary rounded opacity-60"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">KANEDI</h1>
+                        <p class="text-xs text-secondary font-medium">AGRI-STRA-TECH CONSULTANTS SMC LTD</p>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 italic">'Grow Smart, Live Green'</p>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 dark:text-gray-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div id="desktop-menu" class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Home</a>
+                    <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Services</a>
+                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="#consultation" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">AI Consultation</a>
+                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">Contact</a>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Home</a>
+                    <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Services</a>
+                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="#consultation" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">AI Consultation</a>
+                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors text-center">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Empowering Ideas | Transforming Communities | Delivering Impact
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4">
+                    Ugandan women- and youth-led firm offering consulting and advisory services in agriculture, education, health, digital innovation, and business
+                </p>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 italic">
+                    "Grow Smart, Live Green" - 10+ years of experience empowering communities through inclusive, tech-driven, evidence-based strategies
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('services')" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-colors">
+                        Our 25+ Services
+                    </button>
+                    <button onclick="scrollToSection('consultation')" class="border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        AI Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Core Values</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Integrity</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Open financial reporting in donor-funded projects and ethical delivery of consulting assignments.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-lightbulb text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Mobile apps for farmer training and AI-driven tools for health and education data analysis.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-users text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Client-Centeredness</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Co-designed digital learning toolkits and participatory business strategy sessions.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-hands-helping text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Inclusiveness</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Youth-led health outreach campaigns and gender-balanced leadership training.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-leaf text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Regenerative farming models and long-term digital solutions for comprehensive management.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-star text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Excellence</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Results-based monitoring systems and continuous capacity-building for lasting solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Comprehensive Services</h2>
+            <div class="mb-8">
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="filterServices('all')" class="filter-btn bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">All Services</button>
+                    <button onclick="filterServices('research')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Research & Writing</button>
+                    <button onclick="filterServices('management')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Project Management</button>
+                    <button onclick="filterServices('digital')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Digital & Innovation</button>
+                    <button onclick="filterServices('business')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Business & Strategy</button>
+                    <button onclick="filterServices('agriculture')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Agriculture & Environment</button>
+                </div>
+            </div>
+            
+            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Research & Academic Writing Services -->
+                <div class="service-card research bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-book text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Research & Academic Writing</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">End-to-end research support including thesis assistance, research papers, journal submissions, literature reviews, policy briefs, and strategic white papers.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Personalized mentoring, publication guidance, AI plagiarism checks, interactive dashboards
+                    </div>
+                </div>
+
+                <!-- Proposal Writing & Grants Support -->
+                <div class="service-card management bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-file-alt text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Proposal Writing & Grants</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Donor-aligned project proposals, grant applications, concept notes, logical frameworks, and funding prospect research.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Customized donor strategies, precise budgeting, pitch decks, post-submission engagement
+                    </div>
+                </div>
+
+                <!-- Project Management & M&E -->
+                <div class="service-card management bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-tasks text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Project Management & M&E</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Project design, implementation, baseline/midline/endline surveys, outcome assessments, and stakeholder coordination.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Real-time dashboards, adaptive learning loops, beneficiary feedback tools
+                    </div>
+                </div>
+
+                <!-- Strategic & Business Planning -->
+                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-chart-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Strategic & Business Planning</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Strategic plans for NGOs and SMEs, business plans, market feasibility, SWOT assessments, and scaling strategies.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Market-driven planning, scenario modeling, innovation canvases
+                    </div>
+                </div>
+
+                <!-- Capacity Building & Training -->
+                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Capacity Building & Training</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Curriculum design, staff training in entrepreneurship, leadership, workshops on M&E, proposal writing, multilingual support.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Gamified learning, mobile micro-learning, alumni mentorship forums
+                    </div>
+                </div>
+
+                <!-- Digital & Innovation Advisory -->
+                <div class="service-card digital bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-microchip text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Digital & Innovation Advisory</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Digital transformation, project reporting tools, data visualization, ICT integration, and technology adoption capacity building.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Cutting-edge tech solutions, innovation boot camps, blockchain data integrity
+                    </div>
+                </div>
+
+                <!-- Agribusiness & Agricultural Consultancy -->
+                <div class="service-card agriculture bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-seedling text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Agribusiness & Agricultural Consultancy</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Value chain analysis, market access facilitation, climate-smart agriculture advisory, sustainable farming, agribusiness startup support.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Agritech matching, farmer innovation labs, weather-smart tools
+                    </div>
+                </div>
+
+                <!-- MEAL Services -->
+                <div class="service-card management bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-analytics text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">MEAL (Monitoring, Evaluation, Accountability & Learning)</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">MEAL frameworks, adaptive management capacity building, data collection and analysis, learning workshops, feedback mechanisms.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Real-time beneficiary voice capture, AI-driven trend detection
+                    </div>
+                </div>
+
+                <!-- Data Management & Visualization -->
+                <div class="service-card digital bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-chart-bar text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Data Management & Visualization</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Database design, data cleaning and analysis, visualization dashboards, GIS mapping, and data software training.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Interactive dashboards, mobile data collection, visual storytelling
+                    </div>
+                </div>
+
+                <!-- Policy Analysis & Advocacy -->
+                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-gavel text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Policy Analysis & Advocacy</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Policy reviews, impact assessments, recommendations, advocacy campaigns, and stakeholder policy dialogues.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Policy simulations, infographics, digital petition platforms
+                    </div>
+                </div>
+
+                <!-- Environmental & Sustainability -->
+                <div class="service-card agriculture bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-leaf text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sustainability & Environmental Consultancy</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Environmental impact assessments, sustainability plans, climate risk assessments, community environmental awareness.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Eco-audit toolkits, carbon calculators, green financing linkages
+                    </div>
+                </div>
+
+                <!-- Public Health & Community Outreach -->
+                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-heartbeat text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Public Health & Community Outreach</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Community health program design, behavior change communication, health data collection and analysis.</p>
+                    <div class="text-sm text-secondary">
+                        <strong>Value Additions:</strong> Mobile health messaging, predictive analytics, digital referral systems
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button id="view-all-services" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors">
+                    View All 25 Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About KANEDI</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Women & Youth-Led Excellence</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">
+                            KANEDI Agri-Stra-Tech Consultants SMC Ltd. is a Ugandan women- and youth-led firm offering consulting and advisory services in agriculture, education, health, digital innovation, and business. We empower communities through inclusive, tech-driven, evidence-based strategies with 10+ years' experience.
+                        </p>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg mb-6">
+                            <h4 class="font-semibold text-primary mb-2">Our Vision</h4>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">To be a leading catalyst for sustainable and inclusive development in Africa through innovative, people-centered consultancy solutions.</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold text-primary mb-2">Our Mission</h4>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">To empower communities, institutions, and individuals by delivering tailored consultancy services that combine research, innovation, and ethical practices for lasting development and social transformation.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-xl">
+                        <h4 class="text-xl font-semibold mb-6 text-center">What Sets Us Apart</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
+                                <div>
+                                    <strong class="text-sm">Client-Focused Solutions</strong>
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Customized services tailored to each client's unique needs</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
+                                <div>
+                                    <strong class="text-sm">Proven Expertise</strong>
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Over 10 years of experience in research and project consulting</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
+                                <div>
+                                    <strong class="text-sm">Multilingual Services</strong>
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Runyakitara, Luganda, Kinyarwanda & more</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
+                                <div>
+                                    <strong class="text-sm">Digital Innovation</strong>
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Real-time tools, dashboards, and AI solutions</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
+                                <div>
+                                    <strong class="text-sm">Regional Networks</strong>
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Advocacy, partnerships, and outreach across East Africa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Consultation Section -->
+    <section id="consultation" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">AI-Powered Multi-Sector Consultation</h2>
+                <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <i class="fas fa-robot text-primary mr-3"></i>
+                            Get Expert Advice Across All Our Service Areas
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Leverage our AI consultant for guidance on agriculture, research, project management, digital innovation, business strategy, and more.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label for="consultation-service" class="block text-sm font-medium mb-2">Select Service Area</label>
+                            <select id="consultation-service" class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Choose a service area...</option>
+                                <option value="research">Research & Academic Writing</option>
+                                <option value="proposals">Proposal Writing & Grants</option>
+                                <option value="project-management">Project Management & M&E</option>
+                                <option value="strategic-planning">Strategic & Business Planning</option>
+                                <option value="capacity-building">Capacity Building & Training</option>
+                                <option value="digital-innovation">Digital & Innovation Advisory</option>
+                                <option value="agriculture">Agribusiness & Agricultural Consultancy</option>
+                                <option value="meal">MEAL Services</option>
+                                <option value="data-management">Data Management & Visualization</option>
+                                <option value="policy">Policy Analysis & Advocacy</option>
+                                <option value="sustainability">Environmental & Sustainability</option>
+                                <option value="health">Public Health & Community Outreach</option>
+                                <option value="general">General Multi-Sector Advice</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="consultation-question" class="block text-sm font-medium mb-2">Your Question</label>
+                            <textarea 
+                                id="consultation-question" 
+                                placeholder="Describe your challenge, project needs, or question in detail..."
+                                class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent h-32 resize-vertical"
+                            ></textarea>
+                        </div>
+                        
+                        <button 
+                            id="ask-ai-btn" 
+                            class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors flex items-center justify-center"
+                        >
+                            <i class="fas fa-brain mr-2"></i>
+                            Get Expert AI Consultation
+                        </button>
+                    </div>
+                    
+                    <!-- AI Response Area -->
+                    <div id="ai-response-container" class="mt-8 hidden">
+                        <div class="border-t border-gray-200 dark:border-gray-600 pt-6">
+                            <h4 class="text-lg font-semibold mb-4 flex items-center">
+                                <i class="fas fa-lightbulb text-accent mr-2"></i>
+                                KANEDI Expert Consultation Response
+                            </h4>
+                            <div id="ai-response" class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg prose prose-sm max-w-none dark:prose-invert">
+                                <div class="flex items-center space-x-2">
+                                    <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
+                                    <span>Getting expert multi-sector advice...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Office Address</h4>
+                                <p class="text-gray-600 dark:text-gray-300">Wandegeya Market, Mulondo Road 2<br>North Wing, 1st Floor, Room: NFF 007<br>Kampala, Uganda</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary/10 p-3 rounded-lg">
+                                <i class="fas fa-phone text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Phone / WhatsApp</h4>
+                                <p class="text-gray-600 dark:text-gray-300">+256 772 864 371<br>+256 753 864 371<br>+256 726 150 979</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent/10 p-3 rounded-lg">
+                                <i class="fas fa-envelope text-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-gray-600 dark:text-gray-300">kanediagristratechconsltd@gmail.com<br>edith.kangabe@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <i class="fas fa-globe text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Website & Social Media</h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    <a href="https://kastc.ct.ws" target="_blank" class="text-primary hover:underline">kastc.ct.ws</a><br>
+                                    Facebook: KANEDI Agri-Stra-Tech<br>
+                                    LinkedIn: Edith Kangabe<br>
+                                    Twitter/Instagram: @AgriStraTechLtd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-6">Send us a Message</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="First Name" class="text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <input type="text" placeholder="Last Name" class="text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <input type="tel" placeholder="Phone Number" class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <select class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">Service of Interest</option>
+                            <option value="research">Research & Academic Writing</option>
+                            <option value="proposals">Proposal Writing & Grants</option>
+                            <option value="project-management">Project Management & M&E</option>
+                            <option value="strategic-planning">Strategic & Business Planning</option>
+                            <option value="agriculture">Agribusiness & Agricultural Consultancy</option>
+                            <option value="digital">Digital & Innovation Advisory</option>
+                            <option value="multiple">Multiple Services</option>
+                        </select>
+                        <textarea placeholder="Tell us about your project, research needs, or consultation requirements..." class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent h-32 resize-vertical"></textarea>
+                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="relative">
+                            <!-- Logo-inspired design -->
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-6 h-6 bg-accent rounded-full opacity-80"></div>
+                                <div class="z-10 flex items-center justify-center">
+                                    <span class="text-white font-bold text-xs">KASTC</span>
+                                </div>
+                                <div class="absolute bottom-1 left-1 right-1 h-2 bg-secondary rounded opacity-60"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">KANEDI</h3>
+                            <p class="text-sm text-secondary font-medium">AGRI-STRA-TECH CONSULTANTS SMC LTD</p>
+                            <p class="text-xs text-gray-400 italic">'Grow Smart, Live Green'</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Empowering Ideas | Transforming Communities | Delivering Impact</p>
+                    <p class="text-gray-400 mb-4 text-sm">Ugandan women- and youth-led firm with 10+ years of experience in multi-sector consulting.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Key Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Research & Academic Writing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Proposal Writing & Grants</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Project Management & M&E</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Digital Innovation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Agricultural Consultancy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">All 25 Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#consultation" class="hover:text-white transition-colors">AI Consultation</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="https://kastc.ct.ws" target="_blank" class="hover:text-white transition-colors">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD. All rights reserved.</p>
+                <p class="text-sm mt-2">Empowering Ideas | Transforming Communities | Delivering Impact</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
+    <script>
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            const offset = 80;
+            const elementPosition = element.offsetTop - offset;
+            
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+            
+            mobileMenu.classList.add('hidden');
+        }
+
+        // Navigation link click handlers
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+            });
+        });
+
+        // Service filtering
+        function filterServices(category) {
+            const cards = document.querySelectorAll('.service-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update button styles
+            buttons.forEach(btn => {
+                btn.className = 'filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors';
+            });
+            event.target.className = 'filter-btn bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors';
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // View all services functionality
+        let showingAll = false;
+        document.getElementById('view-all-services').addEventListener('click', function() {
+            const cards = document.querySelectorAll('.service-card');
+            
+            if (!showingAll) {
+                // Show all services including the ones not initially displayed
+                const additionalServices = [
+                    {
+                        title: 'Technical Editing & Quality Assurance',
+                        description: 'Editing academic/technical documents, data quality assessments, quality assurance system design, formatting, compliance checks.',
+                        icon: 'fas fa-edit',
+                        category: 'research',
+                        valueAdd: 'AI-integrated quality review tools, accessibility-enhanced formatting'
+                    },
+                    {
+                        title: 'Stakeholder Engagement & Communication',
+                        description: 'Engagement plans, facilitating dialogues, conflict resolution, communication strategy development, donor and community reporting.',
+                        icon: 'fas fa-users-cog',
+                        category: 'business',
+                        valueAdd: 'Virtual town halls, interactive stakeholder maps, digital storytelling'
+                    },
+                    {
+                        title: 'Grant & Fund Management',
+                        description: 'Financial tracking, compliance audits, risk management, capacity building in financial management, donor liaison.',
+                        icon: 'fas fa-coins',
+                        category: 'management',
+                        valueAdd: 'Automated dashboards, financial storytelling, risk scenario testing'
+                    },
+                    {
+                        title: 'Business Development & Marketing',
+                        description: 'Market analysis, branding, digital marketing, sales funnel development, CRM setup and training.',
+                        icon: 'fas fa-rocket',
+                        category: 'business',
+                        valueAdd: 'AI customer journey analysis, brand audits, influencer networks'
+                    },
+                    {
+                        title: 'Technology Integration & Digital Literacy',
+                        description: 'Training on digital tools, digital literacy programs, ICT infrastructure assessment, e-learning support.',
+                        icon: 'fas fa-laptop-code',
+                        category: 'digital',
+                        valueAdd: 'Adoption scorecards, community digital champions, ICT chatbot support'
+                    },
+                    {
+                        title: 'Risk Management & Compliance',
+                        description: 'Risk identification and mitigation, compliance audits, internal control system development, governance training.',
+                        icon: 'fas fa-shield-alt',
+                        category: 'management',
+                        valueAdd: 'AI risk scanning, simulated compliance testing'
+                    },
+                    {
+                        title: 'Communication & Media Relations',
+                        description: 'Press releases, media statements, social media strategy, crisis communication, media events.',
+                        icon: 'fas fa-broadcast-tower',
+                        category: 'business',
+                        valueAdd: 'Sentiment tracking, story banks, media pitching clinics'
+                    },
+                    {
+                        title: 'Event Planning & Facilitation',
+                        description: 'Workshop and conference design, stakeholder meetings, virtual event coordination, event documentation.',
+                        icon: 'fas fa-calendar-alt',
+                        category: 'business',
+                        valueAdd: 'Real-time feedback apps, facilitation kits, carbon tracking'
+                    },
+                    {
+                        title: 'Sustainability Reporting & Impact Measurement',
+                        description: 'Sustainability and CSR reports, social/economic/environmental impact measurement, impact investment advice.',
+                        icon: 'fas fa-chart-pie',
+                        category: 'agriculture',
+                        valueAdd: 'Interactive digital reports, ROI calculators, storytelling templates'
+                    },
+                    {
+                        title: 'Knowledge Management & Documentation',
+                        description: 'Knowledge-sharing platforms, documentation of best practices, organizational manuals, SOPs.',
+                        icon: 'fas fa-database',
+                        category: 'digital',
+                        valueAdd: 'Voice-to-text tools, gamification, custom knowledge portals'
+                    },
+                    {
+                        title: 'Organizational Development & Capacity Assessment',
+                        description: 'Organizational capacity assessments, capacity strengthening plans, change management support, leadership coaching.',
+                        icon: 'fas fa-building',
+                        category: 'business',
+                        valueAdd: 'Gamified tools, peer learning networks, virtual change labs'
+                    },
+                    {
+                        title: 'Monitoring Tools & Dashboard Development',
+                        description: 'Custom monitoring tools and checklists, real-time dashboards, staff training on dashboard usage.',
+                        icon: 'fas fa-tachometer-alt',
+                        category: 'digital',
+                        valueAdd: 'Offline-compatible dashboards, KPI calculators, color-blind visuals'
+                    },
+                    {
+                        title: 'Grant Proposal Review & Capacity Building',
+                        description: 'Review and strengthening of proposals, team training on writing techniques, donor-specific tailoring.',
+                        icon: 'fas fa-search-dollar',
+                        category: 'research',
+                        valueAdd: 'Donor panel simulations, annotated templates, AI scoring tools'
+                    }
+                ];
+
+                // Add the additional services to the grid
+                const grid = document.getElementById('services-grid');
+                additionalServices.forEach(service => {
+                    const serviceCard = document.createElement('div');
+                    serviceCard.className = `service-card ${service.category} bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow`;
+                    serviceCard.innerHTML = `
+                        <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                            <i class="${service.icon} text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">${service.title}</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">${service.description}</p>
+                        <div class="text-sm text-secondary">
+                            <strong>Value Additions:</strong> ${service.valueAdd}
+                        </div>
+                    `;
+                    grid.appendChild(serviceCard);
+                });
+
+                this.textContent = 'Show Core Services';
+                showingAll = true;
+            } else {
+                // Remove additional services and show only core ones
+                const allCards = document.querySelectorAll('.service-card');
+                allCards.forEach((card, index) => {
+                    if (index >= 12) { // Keep only first 12 services
+                        card.remove();
+                    }
+                });
+                this.textContent = 'View All 25 Services';
+                showingAll = false;
+            }
+        });
+
+        // AI Consultation Handler
+        if (window.Poe) {
+            window.Poe.registerHandler("kanedi-consultation", (result, context) => {
+                const responseContainer = document.getElementById('ai-response');
+                const msg = result.responses[0];
+
+                if (msg.status === "error") {
+                    responseContainer.innerHTML = `<div class="text-red-600 dark:text-red-400">Error: ${msg.statusText}</div>`;
+                } else if (msg.status === "incomplete") {
+                    responseContainer.innerHTML = marked.parse(msg.content);
+                } else if (msg.status === "complete") {
+                    responseContainer.innerHTML = marked.parse(msg.content);
+                }
+            });
+        }
+
+        // AI Consultation Form Handler
+        document.getElementById('ask-ai-btn').addEventListener('click', async () => {
+            const service = document.getElementById('consultation-service').value;
+            const question = document.getElementById('consultation-question').value.trim();
+            
+            if (!question) {
+                showAlert('Please enter your question before submitting.');
+                return;
+            }
+
+            const responseContainer = document.getElementById('ai-response-container');
+            const responseDiv = document.getElementById('ai-response');
+            
+            // Show loading state
+            responseContainer.classList.remove('hidden');
+            responseDiv.innerHTML = `
+                <div class="flex items-center space-x-2">
+                    <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
+                    <span>Getting expert multi-sector advice from KANEDI...</span>
+                </div>
+            `;
+
+            let prompt = `@Claude-Sonnet-4 You are an expert multi-sector consultant from KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD, a Ugandan women- and youth-led consultancy firm with 10+ years of experience. `;
+            
+            if (service) {
+                const serviceMap = {
+                    'research': 'research and academic writing services',
+                    'proposals': 'proposal writing and grants support',
+                    'project-management': 'project management and monitoring & evaluation',
+                    'strategic-planning': 'strategic and business planning',
+                    'capacity-building': 'capacity building and training services',
+                    'digital-innovation': 'digital innovation and technology advisory',
+                    'agriculture': 'agribusiness and agricultural consultancy',
+                    'meal': 'MEAL (Monitoring, Evaluation, Accountability & Learning)',
+                    'data-management': 'data management and visualization',
+                    'policy': 'policy analysis and advocacy',
+                    'sustainability': 'environmental sustainability consultancy',
+                    'health': 'public health and community outreach',
+                    'general': 'multi-sector consulting across all our service areas'
+                };
+                prompt += `The consultation is specifically about ${serviceMap[service]}. `;
+            }
+            
+            prompt += `Our company offers 25+ services including research & academic writing, proposal writing & grants, project management & M&E, strategic planning, capacity building, digital innovation, agribusiness consultancy, MEAL services, data management, policy analysis, environmental consultancy, public health, and more.
+
+            Please provide expert advice for: ${question}
+
+            Structure your response as a professional KANEDI consultant would:
+            1. Situation Analysis
+            2. Specific Recommendations 
+            3. KANEDI Value-Add Approaches
+            4. Implementation Steps
+            5. Expected Outcomes
+
+            Emphasize our strengths: women & youth-led, multilingual services, digital innovation, evidence-based approaches, and 10+ years experience across East Africa.`;
+
+            try {
+                if (window.Poe) {
+                    await window.Poe.sendUserMessage(prompt, {
+                        handler: "kanedi-consultation",
+                        stream: true,
+                        openChat: false
+                    });
+                } else {
+                    responseDiv.innerHTML = `
+                        <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
+                            <h5 class="font-semibold text-blue-800 dark:text-blue-200 mb-2">Sample KANEDI Consultation Response</h5>
+                            <p class="text-blue-700 dark:text-blue-300">Thank you for your consultation request about "${service ? service.replace('-', ' ') : 'multi-sector consulting'}". Our expert team would analyze your specific needs and provide comprehensive recommendations.</p>
+                            <p class="text-blue-700 dark:text-blue-300 mt-2">For full AI consultation capabilities with our 25+ services expertise, please use this app in the Poe platform environment.</p>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                responseDiv.innerHTML = `<div class="text-red-600 dark:text-red-400">Error: ${error.message}</div>`;
+            }
+        });
+
+        // Contact form handler
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            showAlert('Thank you for your message! The KANEDI team will get back to you within 24 hours.');
+            e.target.reset();
+        });
+
+        // Custom alert function
+        function showAlert(message) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            modal.innerHTML = `
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-info-circle text-primary text-xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Information</h3>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">${message}</p>
+                    <div class="flex justify-end">
+                        <button class="px-4 py-2 bg-primary text-white hover:bg-opacity-90 rounded transition-colors" onclick="this.closest('.fixed').remove()">OK</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Smooth scroll behavior for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                if (targetId) {
+                    scrollToSection(targetId);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
