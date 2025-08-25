@@ -50,6 +50,7 @@
                     <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Home</a>
                     <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Services</a>
                     <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="#pricing" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Pricing</a>
                     <a href="#consultation" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">AI Consultation</a>
                     <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">Contact</a>
                 </div>
@@ -60,6 +61,7 @@
                     <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Home</a>
                     <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Services</a>
                     <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="#pricing" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Pricing</a>
                     <a href="#consultation" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">AI Consultation</a>
                     <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors text-center">Contact</a>
                 </div>
@@ -84,8 +86,8 @@
                     <button onclick="scrollToSection('services')" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-colors">
                         Our 25+ Services
                     </button>
-                    <button onclick="scrollToSection('consultation')" class="border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors">
-                        AI Consultation
+                    <button onclick="scrollToSection('pricing')" class="border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        View Pricing
                     </button>
                 </div>
             </div>
@@ -143,236 +145,383 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section (Condensed) -->
     <section id="services" class="py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Comprehensive Services</h2>
-            <div class="mb-8">
-                <div class="flex flex-wrap justify-center gap-4 mb-8">
-                    <button onclick="filterServices('all')" class="filter-btn bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">All Services</button>
-                    <button onclick="filterServices('research')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Research & Writing</button>
-                    <button onclick="filterServices('management')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Project Management</button>
-                    <button onclick="filterServices('digital')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Digital & Innovation</button>
-                    <button onclick="filterServices('business')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Business & Strategy</button>
-                    <button onclick="filterServices('agriculture')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Agriculture & Environment</button>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-book text-3xl text-primary mb-4"></i>
+                    <h3 class="font-semibold mb-2">Research & Writing</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Academic research, thesis support, publications</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-file-alt text-3xl text-secondary mb-4"></i>
+                    <h3 class="font-semibold mb-2">Proposal & Grants</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Donor proposals, grant writing, funding</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-tasks text-3xl text-accent mb-4"></i>
+                    <h3 class="font-semibold mb-2">Project Management</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">M&E, implementation, coordination</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-seedling text-3xl text-primary mb-4"></i>
+                    <h3 class="font-semibold mb-2">25+ Services</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Digital innovation, agriculture, health</p>
                 </div>
             </div>
-            
-            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Research & Academic Writing Services -->
-                <div class="service-card research bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-book text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Research & Academic Writing</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">End-to-end research support including thesis assistance, research papers, journal submissions, literature reviews, policy briefs, and strategic white papers.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Personalized mentoring, publication guidance, AI plagiarism checks, interactive dashboards
-                    </div>
-                </div>
-
-                <!-- Proposal Writing & Grants Support -->
-                <div class="service-card management bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-file-alt text-2xl text-secondary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Proposal Writing & Grants</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Donor-aligned project proposals, grant applications, concept notes, logical frameworks, and funding prospect research.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Customized donor strategies, precise budgeting, pitch decks, post-submission engagement
-                    </div>
-                </div>
-
-                <!-- Project Management & M&E -->
-                <div class="service-card management bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-tasks text-2xl text-accent"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Project Management & M&E</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Project design, implementation, baseline/midline/endline surveys, outcome assessments, and stakeholder coordination.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Real-time dashboards, adaptive learning loops, beneficiary feedback tools
-                    </div>
-                </div>
-
-                <!-- Strategic & Business Planning -->
-                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-chart-line text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Strategic & Business Planning</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Strategic plans for NGOs and SMEs, business plans, market feasibility, SWOT assessments, and scaling strategies.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Market-driven planning, scenario modeling, innovation canvases
-                    </div>
-                </div>
-
-                <!-- Capacity Building & Training -->
-                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-graduation-cap text-2xl text-secondary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Capacity Building & Training</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Curriculum design, staff training in entrepreneurship, leadership, workshops on M&E, proposal writing, multilingual support.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Gamified learning, mobile micro-learning, alumni mentorship forums
-                    </div>
-                </div>
-
-                <!-- Digital & Innovation Advisory -->
-                <div class="service-card digital bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-microchip text-2xl text-accent"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Digital & Innovation Advisory</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Digital transformation, project reporting tools, data visualization, ICT integration, and technology adoption capacity building.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Cutting-edge tech solutions, innovation boot camps, blockchain data integrity
-                    </div>
-                </div>
-
-                <!-- Agribusiness & Agricultural Consultancy -->
-                <div class="service-card agriculture bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-seedling text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Agribusiness & Agricultural Consultancy</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Value chain analysis, market access facilitation, climate-smart agriculture advisory, sustainable farming, agribusiness startup support.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Agritech matching, farmer innovation labs, weather-smart tools
-                    </div>
-                </div>
-
-                <!-- MEAL Services -->
-                <div class="service-card management bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-analytics text-2xl text-secondary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">MEAL (Monitoring, Evaluation, Accountability & Learning)</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">MEAL frameworks, adaptive management capacity building, data collection and analysis, learning workshops, feedback mechanisms.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Real-time beneficiary voice capture, AI-driven trend detection
-                    </div>
-                </div>
-
-                <!-- Data Management & Visualization -->
-                <div class="service-card digital bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-chart-bar text-2xl text-accent"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Data Management & Visualization</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Database design, data cleaning and analysis, visualization dashboards, GIS mapping, and data software training.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Interactive dashboards, mobile data collection, visual storytelling
-                    </div>
-                </div>
-
-                <!-- Policy Analysis & Advocacy -->
-                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-gavel text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Policy Analysis & Advocacy</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Policy reviews, impact assessments, recommendations, advocacy campaigns, and stakeholder policy dialogues.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Policy simulations, infographics, digital petition platforms
-                    </div>
-                </div>
-
-                <!-- Environmental & Sustainability -->
-                <div class="service-card agriculture bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-leaf text-2xl text-secondary"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Sustainability & Environmental Consultancy</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Environmental impact assessments, sustainability plans, climate risk assessments, community environmental awareness.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Eco-audit toolkits, carbon calculators, green financing linkages
-                    </div>
-                </div>
-
-                <!-- Public Health & Community Outreach -->
-                <div class="service-card business bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-heartbeat text-2xl text-accent"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Public Health & Community Outreach</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">Community health program design, behavior change communication, health data collection and analysis.</p>
-                    <div class="text-sm text-secondary">
-                        <strong>Value Additions:</strong> Mobile health messaging, predictive analytics, digital referral systems
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-8">
-                <button id="view-all-services" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors">
-                    View All 25 Services
+            <div class="text-center">
+                <button onclick="scrollToSection('pricing')" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-colors">
+                    View Detailed Pricing
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-50 dark:bg-gray-800">
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About KANEDI</h2>
-                <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">Women & Youth-Led Excellence</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-6">
-                            KANEDI Agri-Stra-Tech Consultants SMC Ltd. is a Ugandan women- and youth-led firm offering consulting and advisory services in agriculture, education, health, digital innovation, and business. We empower communities through inclusive, tech-driven, evidence-based strategies with 10+ years' experience.
-                        </p>
-                        
-                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg mb-6">
-                            <h4 class="font-semibold text-primary mb-2">Our Vision</h4>
-                            <p class="text-gray-600 dark:text-gray-300 text-sm">To be a leading catalyst for sustainable and inclusive development in Africa through innovative, people-centered consultancy solutions.</p>
-                        </div>
-                        
-                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
-                            <h4 class="font-semibold text-primary mb-2">Our Mission</h4>
-                            <p class="text-gray-600 dark:text-gray-300 text-sm">To empower communities, institutions, and individuals by delivering tailored consultancy services that combine research, innovation, and ethical practices for lasting development and social transformation.</p>
-                        </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Service Packages & Global Payment Options</h2>
+            <p class="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+                Flexible pricing packages designed for clients worldwide. We accept multiple payment methods to serve our global community.
+            </p>
+
+            <!-- Payment Methods Overview -->
+            <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-xl mb-12">
+                <h3 class="text-xl font-semibold text-center mb-4">We Accept Global Payments</h3>
+                <div class="flex flex-wrap justify-center items-center gap-6">
+                    <div class="flex items-center space-x-2">
+                        <i class="fab fa-paypal text-2xl text-blue-600"></i>
+                        <span class="font-medium">PayPal Worldwide</span>
                     </div>
-                    <div class="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-xl">
-                        <h4 class="text-xl font-semibold mb-6 text-center">What Sets Us Apart</h4>
-                        <div class="space-y-4">
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
-                                <div>
-                                    <strong class="text-sm">Client-Focused Solutions</strong>
-                                    <p class="text-xs text-gray-600 dark:text-gray-300">Customized services tailored to each client's unique needs</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
-                                <div>
-                                    <strong class="text-sm">Proven Expertise</strong>
-                                    <p class="text-xs text-gray-600 dark:text-gray-300">Over 10 years of experience in research and project consulting</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
-                                <div>
-                                    <strong class="text-sm">Multilingual Services</strong>
-                                    <p class="text-xs text-gray-600 dark:text-gray-300">Runyakitara, Luganda, Kinyarwanda & more</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
-                                <div>
-                                    <strong class="text-sm">Digital Innovation</strong>
-                                    <p class="text-xs text-gray-600 dark:text-gray-300">Real-time tools, dashboards, and AI solutions</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fas fa-check-circle text-secondary text-lg mt-1"></i>
-                                <div>
-                                    <strong class="text-sm">Regional Networks</strong>
-                                    <p class="text-xs text-gray-600 dark:text-gray-300">Advocacy, partnerships, and outreach across East Africa</p>
-                                </div>
-                            </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-credit-card text-2xl text-primary"></i>
+                        <span class="font-medium">Credit/Debit Cards</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-mobile-alt text-2xl text-secondary"></i>
+                        <span class="font-medium">Mobile Money (Uganda)</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-university text-2xl text-accent"></i>
+                        <span class="font-medium">Bank Transfers</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fab fa-bitcoin text-2xl text-orange-500"></i>
+                        <span class="font-medium">Cryptocurrency</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research & Academic Writing Packages -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center text-primary">Research & Academic Writing Services</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Basic Package -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Basic Research</h4>
+                            <div class="text-4xl font-bold text-primary mb-2">$499</div>
+                            <p class="text-gray-600 dark:text-gray-300">Perfect for small research projects</p>
                         </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Literature Review (10-15 pages)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Basic Data Analysis</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Professional Formatting</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>AI Plagiarism Check</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>7-day Delivery</li>
+                        </ul>
+                        <button onclick="showPaymentModal('research-basic', 499)" class="w-full bg-primary text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Choose Basic Package
+                        </button>
+                    </div>
+
+                    <!-- Professional Package -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-primary relative">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+                        </div>
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Professional Research</h4>
+                            <div class="text-4xl font-bold text-primary mb-2">$1,299</div>
+                            <p class="text-gray-600 dark:text-gray-300">Comprehensive research solution</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Complete Research Paper (20-40 pages)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Advanced Statistical Analysis</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Publication-Ready Formatting</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>1-on-1 Research Mentoring</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Journal Submission Guidance</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>14-day Delivery</li>
+                        </ul>
+                        <button onclick="showPaymentModal('research-professional', 1299)" class="w-full bg-primary text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Choose Professional Package
+                        </button>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Premium Research</h4>
+                            <div class="text-4xl font-bold text-primary mb-2">$2,999</div>
+                            <p class="text-gray-600 dark:text-gray-300">Full-service research solution</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Multi-Chapter Research (40+ pages)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Complex Data Modeling</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Journal Submission & Follow-up</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Presentation Materials</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>6-Month Post-Publication Support</li>
+                            <li class="flex items-start"><i class="fas fa-check text-secondary mr-3 mt-1"></i>Priority 21-day Delivery</li>
+                        </ul>
+                        <button onclick="showPaymentModal('research-premium', 2999)" class="w-full bg-primary text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Choose Premium Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proposal Writing & Grants Packages -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center text-secondary">Proposal Writing & Grants Services</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Basic Proposal -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Basic Proposal</h4>
+                            <div class="text-4xl font-bold text-secondary mb-2">$699</div>
+                            <p class="text-gray-600 dark:text-gray-300">Small grant proposals</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Grant Proposal (up to $25,000)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Budget Development</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Donor Research</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Compliance Check</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>10-day Delivery</li>
+                        </ul>
+                        <button onclick="showPaymentModal('proposal-basic', 699)" class="w-full bg-secondary text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Choose Basic Proposal
+                        </button>
+                    </div>
+
+                    <!-- Professional Proposal -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-secondary">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Professional Proposal</h4>
+                            <div class="text-4xl font-bold text-secondary mb-2">$1,799</div>
+                            <p class="text-gray-600 dark:text-gray-300">Medium to large grants</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Grant Proposal (up to $100,000)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Detailed Budget & Justification</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Logical Framework</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Pitch Deck Creation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Post-Submission Support</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>14-day Delivery</li>
+                        </ul>
+                        <button onclick="showPaymentModal('proposal-professional', 1799)" class="w-full bg-secondary text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Choose Professional Proposal
+                        </button>
+                    </div>
+
+                    <!-- Premium Proposal -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Premium Proposal</h4>
+                            <div class="text-4xl font-bold text-secondary mb-2">$4,999</div>
+                            <p class="text-gray-600 dark:text-gray-300">Large-scale funding</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Grant Proposal ($100,000+)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Multi-Donor Strategy</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Comprehensive M&E Framework</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Presentation Training</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>6-Month Implementation Support</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>21-day Delivery</li>
+                        </ul>
+                        <button onclick="showPaymentModal('proposal-premium', 4999)" class="w-full bg-secondary text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Choose Premium Proposal
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Management & Consultation Packages -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center text-accent">Project Management & Consultation Services</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Monthly Retainer -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Monthly Retainer</h4>
+                            <div class="text-4xl font-bold text-accent mb-2">$1,499<span class="text-lg">/month</span></div>
+                            <p class="text-gray-600 dark:text-gray-300">Ongoing project support</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>20 Hours Monthly Consultation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Project Management Support</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>M&E Framework Development</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Unlimited Email Support</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Monthly Progress Reports</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Priority Response (24hrs)</li>
+                        </ul>
+                        <button onclick="showPaymentModal('retainer-monthly', 1499)" class="w-full bg-accent text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Start Monthly Retainer
+                        </button>
+                    </div>
+
+                    <!-- Project-Based -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-semibold mb-2">Project-Based</h4>
+                            <div class="text-4xl font-bold text-accent mb-2">$3,999+</div>
+                            <p class="text-gray-600 dark:text-gray-300">Complete project management</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Full Project Lifecycle Management</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Baseline/Midline/Endline Surveys</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Impact Assessment Reports</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Stakeholder Coordination</li>
+                            <li class="flex items-start"><i class="fas fa-check text-primary mr-3 mt-1"></i>Custom Delivery Timeline</li>
+                        </ul>
+                        <button onclick="showPaymentModal('project-based', 3999)" class="w-full bg-accent text-white px-4 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            Get Custom Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Terms & Guarantees -->
+            <div class="bg-gradient-to-r from-secondary/10 to-primary/10 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold text-center mb-6">Payment Terms & Guarantees</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-4 text-primary">Our Guarantees</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start"><i class="fas fa-shield-alt text-secondary mr-3 mt-1"></i>100% Satisfaction Guarantee</li>
+                            <li class="flex items-start"><i class="fas fa-undo text-secondary mr-3 mt-1"></i>Unlimited Revisions</li>
+                            <li class="flex items-start"><i class="fas fa-clock text-secondary mr-3 mt-1"></i>On-Time Delivery Promise</li>
+                            <li class="flex items-start"><i class="fas fa-user-secret text-secondary mr-3 mt-1"></i>Complete Confidentiality</li>
+                            <li class="flex items-start"><i class="fas fa-award text-secondary mr-3 mt-1"></i>Quality Assurance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4 text-primary">Payment Terms</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start"><i class="fas fa-percentage text-secondary mr-3 mt-1"></i>50% Down Payment to Start</li>
+                            <li class="flex items-start"><i class="fas fa-calendar-check text-secondary mr-3 mt-1"></i>50% Upon Completion</li>
+                            <li class="flex items-start"><i class="fas fa-credit-card text-secondary mr-3 mt-1"></i>Secure Payment Processing</li>
+                            <li class="flex items-start"><i class="fas fa-receipt text-secondary mr-3 mt-1"></i>Invoice & Receipt Provided</li>
+                            <li class="flex items-start"><i class="fas fa-globe text-secondary mr-3 mt-1"></i>Multi-Currency Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl max-w-md w-full mx-4 max-h-96 overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-semibold">Choose Payment Method</h3>
+                <button onclick="closePaymentModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            
+            <div id="payment-details" class="mb-6">
+                <!-- Package details will be inserted here -->
+            </div>
+
+            <div class="space-y-4">
+                <!-- PayPal Payment -->
+                <div class="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+                    <h4 class="font-semibold mb-3 flex items-center">
+                        <i class="fab fa-paypal text-blue-600 text-xl mr-3"></i>
+                        PayPal (Worldwide)
+                    </h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Pay securely with PayPal or credit/debit card</p>
+                    <button id="paypal-button" class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Pay with PayPal
+                    </button>
+                </div>
+
+                <!-- Mobile Money (Uganda) -->
+                <div class="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+                    <h4 class="font-semibold mb-3 flex items-center">
+                        <i class="fas fa-mobile-alt text-secondary text-xl mr-3"></i>
+                        Mobile Money (Uganda)
+                    </h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">MTN/Airtel Money: +256 753 864 371 or +256 753 313 431</p>
+                    <button onclick="showMobileMoneyInstructions()" class="w-full bg-secondary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        Mobile Money Instructions
+                    </button>
+                </div>
+
+                <!-- Bank Transfer -->
+                <div class="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+                    <h4 class="font-semibold mb-3 flex items-center">
+                        <i class="fas fa-university text-accent text-xl mr-3"></i>
+                        Bank Transfer
+                    </h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Direct bank transfer (details provided upon request)</p>
+                    <button onclick="requestBankDetails()" class="w-full bg-accent text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        Request Bank Details
+                    </button>
+                </div>
+
+                <!-- Cryptocurrency -->
+                <div class="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+                    <h4 class="font-semibold mb-3 flex items-center">
+                        <i class="fab fa-bitcoin text-orange-500 text-xl mr-3"></i>
+                        Cryptocurrency
+                    </h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Bitcoin, Ethereum, USDT accepted</p>
+                    <button onclick="requestCryptoDetails()" class="w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                        Crypto Payment Details
+                    </button>
+                </div>
+
+                <!-- Contact for Custom Payment -->
+                <div class="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+                    <h4 class="font-semibold mb-3 flex items-center">
+                        <i class="fas fa-handshake text-primary text-xl mr-3"></i>
+                        Custom Payment
+                    </h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Other payment methods? Contact us directly</p>
+                    <button onclick="contactForPayment()" class="w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section (Condensed) -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">About KANEDI</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                    Ugandan women- and youth-led firm with 10+ years of experience empowering communities through inclusive, tech-driven, evidence-based strategies across agriculture, education, health, digital innovation, and business.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                        <h4 class="font-semibold text-primary mb-2">Our Vision</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">To be a leading catalyst for sustainable and inclusive development in Africa through innovative, people-centered consultancy solutions.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                        <h4 class="font-semibold text-primary mb-2">Our Mission</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">To empower communities, institutions, and individuals by delivering tailored consultancy services that combine research, innovation, and ethical practices.</p>
                     </div>
                 </div>
             </div>
@@ -380,7 +529,7 @@
     </section>
 
     <!-- AI Consultation Section -->
-    <section id="consultation" class="py-16">
+    <section id="consultation" class="py-16 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">AI-Powered Multi-Sector Consultation</h2>
@@ -455,7 +604,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" class="py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -485,7 +634,7 @@
                                 <i class="fas fa-envelope text-accent"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold">Email</h4>
+                                <h4 class="font-semibold">Email & PayPal</h4>
                                 <p class="text-gray-600 dark:text-gray-300">kanediagristratechconsltd@gmail.com<br>edith.kangabe@gmail.com</p>
                             </div>
                         </div>
@@ -569,12 +718,12 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Key Services</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#" class="hover:text-white transition-colors">Research & Academic Writing</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Proposal Writing & Grants</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Project Management & M&E</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Digital Innovation</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Agricultural Consultancy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">All 25 Services</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Research & Academic Writing</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Proposal Writing & Grants</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Project Management & M&E</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Digital Innovation</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Agricultural Consultancy</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">View All Packages</a></li>
                     </ul>
                 </div>
                 <div>
@@ -582,6 +731,7 @@
                     <ul class="space-y-2 text-gray-400 text-sm">
                         <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing & Packages</a></li>
                         <li><a href="#consultation" class="hover:text-white transition-colors">AI Consultation</a></li>
                         <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
                         <li><a href="https://kastc.ct.ws" target="_blank" class="hover:text-white transition-colors">Website</a></li>
@@ -640,160 +790,131 @@
             });
         });
 
-        // Service filtering
-        function filterServices(category) {
-            const cards = document.querySelectorAll('.service-card');
-            const buttons = document.querySelectorAll('.filter-btn');
+        // Payment Modal Functions
+        let currentPackage = '';
+        let currentPrice = 0;
+
+        function showPaymentModal(packageType, price) {
+            currentPackage = packageType;
+            currentPrice = price;
             
-            // Update button styles
-            buttons.forEach(btn => {
-                btn.className = 'filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors';
-            });
-            event.target.className = 'filter-btn bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors';
+            const modal = document.getElementById('payment-modal');
+            const detailsDiv = document.getElementById('payment-details');
             
-            // Filter cards
-            cards.forEach(card => {
-                if (category === 'all' || card.classList.contains(category)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+            // Package names mapping
+            const packageNames = {
+                'research-basic': 'Basic Research Package',
+                'research-professional': 'Professional Research Package',
+                'research-premium': 'Premium Research Package',
+                'proposal-basic': 'Basic Proposal Package',
+                'proposal-professional': 'Professional Proposal Package',
+                'proposal-premium': 'Premium Proposal Package',
+                'retainer-monthly': 'Monthly Retainer',
+                'project-based': 'Project-Based Consultation'
+            };
+            
+            detailsDiv.innerHTML = `
+                <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                    <h4 class="font-semibold text-lg mb-2">${packageNames[packageType]}</h4>
+                    <div class="text-2xl font-bold text-primary">$${price.toLocaleString()}</div>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">50% down payment required to start</p>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
         }
 
-        // View all services functionality
-        let showingAll = false;
-        document.getElementById('view-all-services').addEventListener('click', function() {
-            const cards = document.querySelectorAll('.service-card');
+        function closePaymentModal() {
+            document.getElementById('payment-modal').classList.add('hidden');
+        }
+
+        // PayPal Payment Handler
+        document.getElementById('paypal-button').addEventListener('click', () => {
+            const downPayment = currentPrice * 0.5; // 50% down payment
+            const paypalEmail = 'edith.kangabe@gmail.com';
             
-            if (!showingAll) {
-                // Show all services including the ones not initially displayed
-                const additionalServices = [
-                    {
-                        title: 'Technical Editing & Quality Assurance',
-                        description: 'Editing academic/technical documents, data quality assessments, quality assurance system design, formatting, compliance checks.',
-                        icon: 'fas fa-edit',
-                        category: 'research',
-                        valueAdd: 'AI-integrated quality review tools, accessibility-enhanced formatting'
-                    },
-                    {
-                        title: 'Stakeholder Engagement & Communication',
-                        description: 'Engagement plans, facilitating dialogues, conflict resolution, communication strategy development, donor and community reporting.',
-                        icon: 'fas fa-users-cog',
-                        category: 'business',
-                        valueAdd: 'Virtual town halls, interactive stakeholder maps, digital storytelling'
-                    },
-                    {
-                        title: 'Grant & Fund Management',
-                        description: 'Financial tracking, compliance audits, risk management, capacity building in financial management, donor liaison.',
-                        icon: 'fas fa-coins',
-                        category: 'management',
-                        valueAdd: 'Automated dashboards, financial storytelling, risk scenario testing'
-                    },
-                    {
-                        title: 'Business Development & Marketing',
-                        description: 'Market analysis, branding, digital marketing, sales funnel development, CRM setup and training.',
-                        icon: 'fas fa-rocket',
-                        category: 'business',
-                        valueAdd: 'AI customer journey analysis, brand audits, influencer networks'
-                    },
-                    {
-                        title: 'Technology Integration & Digital Literacy',
-                        description: 'Training on digital tools, digital literacy programs, ICT infrastructure assessment, e-learning support.',
-                        icon: 'fas fa-laptop-code',
-                        category: 'digital',
-                        valueAdd: 'Adoption scorecards, community digital champions, ICT chatbot support'
-                    },
-                    {
-                        title: 'Risk Management & Compliance',
-                        description: 'Risk identification and mitigation, compliance audits, internal control system development, governance training.',
-                        icon: 'fas fa-shield-alt',
-                        category: 'management',
-                        valueAdd: 'AI risk scanning, simulated compliance testing'
-                    },
-                    {
-                        title: 'Communication & Media Relations',
-                        description: 'Press releases, media statements, social media strategy, crisis communication, media events.',
-                        icon: 'fas fa-broadcast-tower',
-                        category: 'business',
-                        valueAdd: 'Sentiment tracking, story banks, media pitching clinics'
-                    },
-                    {
-                        title: 'Event Planning & Facilitation',
-                        description: 'Workshop and conference design, stakeholder meetings, virtual event coordination, event documentation.',
-                        icon: 'fas fa-calendar-alt',
-                        category: 'business',
-                        valueAdd: 'Real-time feedback apps, facilitation kits, carbon tracking'
-                    },
-                    {
-                        title: 'Sustainability Reporting & Impact Measurement',
-                        description: 'Sustainability and CSR reports, social/economic/environmental impact measurement, impact investment advice.',
-                        icon: 'fas fa-chart-pie',
-                        category: 'agriculture',
-                        valueAdd: 'Interactive digital reports, ROI calculators, storytelling templates'
-                    },
-                    {
-                        title: 'Knowledge Management & Documentation',
-                        description: 'Knowledge-sharing platforms, documentation of best practices, organizational manuals, SOPs.',
-                        icon: 'fas fa-database',
-                        category: 'digital',
-                        valueAdd: 'Voice-to-text tools, gamification, custom knowledge portals'
-                    },
-                    {
-                        title: 'Organizational Development & Capacity Assessment',
-                        description: 'Organizational capacity assessments, capacity strengthening plans, change management support, leadership coaching.',
-                        icon: 'fas fa-building',
-                        category: 'business',
-                        valueAdd: 'Gamified tools, peer learning networks, virtual change labs'
-                    },
-                    {
-                        title: 'Monitoring Tools & Dashboard Development',
-                        description: 'Custom monitoring tools and checklists, real-time dashboards, staff training on dashboard usage.',
-                        icon: 'fas fa-tachometer-alt',
-                        category: 'digital',
-                        valueAdd: 'Offline-compatible dashboards, KPI calculators, color-blind visuals'
-                    },
-                    {
-                        title: 'Grant Proposal Review & Capacity Building',
-                        description: 'Review and strengthening of proposals, team training on writing techniques, donor-specific tailoring.',
-                        icon: 'fas fa-search-dollar',
-                        category: 'research',
-                        valueAdd: 'Donor panel simulations, annotated templates, AI scoring tools'
-                    }
-                ];
-
-                // Add the additional services to the grid
-                const grid = document.getElementById('services-grid');
-                additionalServices.forEach(service => {
-                    const serviceCard = document.createElement('div');
-                    serviceCard.className = `service-card ${service.category} bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow`;
-                    serviceCard.innerHTML = `
-                        <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
-                            <i class="${service.icon} text-2xl text-primary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">${service.title}</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">${service.description}</p>
-                        <div class="text-sm text-secondary">
-                            <strong>Value Additions:</strong> ${service.valueAdd}
-                        </div>
-                    `;
-                    grid.appendChild(serviceCard);
-                });
-
-                this.textContent = 'Show Core Services';
-                showingAll = true;
-            } else {
-                // Remove additional services and show only core ones
-                const allCards = document.querySelectorAll('.service-card');
-                allCards.forEach((card, index) => {
-                    if (index >= 12) { // Keep only first 12 services
-                        card.remove();
-                    }
-                });
-                this.textContent = 'View All 25 Services';
-                showingAll = false;
-            }
+            // Create PayPal payment URL
+            const paypalUrl = `https://www.paypal.com/paypalme/edithkangabe/${downPayment}`;
+            
+            // Open PayPal in new tab
+            window.open(paypalUrl, '_blank');
+            
+            showAlert(`PayPal payment initiated for $${downPayment} (50% down payment). After payment, we'll contact you to begin your ${currentPackage} project.`);
+            closePaymentModal();
         });
+
+        function showMobileMoneyInstructions() {
+            showAlert(`Mobile Money Payment Instructions:
+            
+1. Send 50% down payment (${(currentPrice * 0.5).toLocaleString()} USD equivalent in UGX) to:
+   • MTN Mobile Money: +256 753 864 371
+   • Airtel Money: +256 753 313 431
+
+2. Send payment confirmation screenshot to:
+   • WhatsApp: +256 753 864 371
+   • Email: edith.kangabe@gmail.com
+
+3. Include your project details and contact information
+
+We'll confirm payment and start your project within 24 hours.`);
+            closePaymentModal();
+        }
+
+        function requestBankDetails() {
+            showAlert(`Bank Transfer Details:
+
+We'll send you our bank transfer details via email for secure payment processing.
+
+Please contact us at:
+• Email: edith.kangabe@gmail.com
+• WhatsApp: +256 753 864 371
+
+Include:
+• Selected package: ${currentPackage}
+• Your contact details
+• Preferred currency
+
+We support transfers in USD, EUR, GBP, and UGX.`);
+            closePaymentModal();
+        }
+
+        function requestCryptoDetails() {
+            showAlert(`Cryptocurrency Payment:
+
+We accept Bitcoin, Ethereum, and USDT for international clients.
+
+Please contact us for wallet addresses:
+• Email: edith.kangabe@gmail.com
+• WhatsApp: +256 753 864 371
+
+Include:
+• Selected package: ${currentPackage}
+• Preferred cryptocurrency
+• Your contact details
+
+Current rate will be calculated at time of payment.`);
+            closePaymentModal();
+        }
+
+        function contactForPayment() {
+            showAlert(`Custom Payment Options:
+
+Contact our team for alternative payment methods:
+
+📧 Email: edith.kangabe@gmail.com
+📱 WhatsApp: +256 753 864 371
+📞 Phone: +256 772 864 371
+
+We can arrange:
+• Western Union transfers
+• MoneyGram
+• Local bank transfers
+• Installment plans
+• Other regional payment methods
+
+Selected package: ${currentPackage} - $${currentPrice.toLocaleString()}`);
+            closePaymentModal();
+        }
 
         // AI Consultation Handler
         if (window.Poe) {
@@ -900,12 +1021,12 @@
             const modal = document.createElement('div');
             modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
             modal.innerHTML = `
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg w-full mx-4 max-h-96 overflow-y-auto">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-info-circle text-primary text-xl mr-3"></i>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Information</h3>
                     </div>
-                    <p class="text-gray-700 dark:text-gray-300 mb-4">${message}</p>
+                    <div class="text-gray-700 dark:text-gray-300 mb-4 whitespace-pre-line">${message}</div>
                     <div class="flex justify-end">
                         <button class="px-4 py-2 bg-primary text-white hover:bg-opacity-90 rounded transition-colors" onclick="this.closest('.fixed').remove()">OK</button>
                     </div>
