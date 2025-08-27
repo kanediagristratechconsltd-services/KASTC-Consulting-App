@@ -1,3 +1,538 @@
+import React from "react";
+
+export default function About() {
+  return (
+    <div className="about">
+      <h1>KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD.</h1>
+      <em>‘Grow Smart, Live Green’</em>
+      <p><strong>Empowering Ideas | Transforming Communities | Delivering Impact.</strong></p>
+      <h2>About Us</h2>
+      <p>
+        KANEDI Agri-Stra-Tech Consultants Ltd. is a Ugandan women- and youth-led firm offering consulting and advisory services in agriculture, education, health, digital innovation, and business. We empower communities through inclusive, tech-driven, evidence-based strategies with 10+ years' experience.
+      </p>
+      <h3>Vision</h3>
+      <p>
+        To be a leading catalyst for sustainable and inclusive development in Africa through innovative, people-centered consultancy solutions.
+      </p>
+      <h3>Mission</h3>
+      <p>
+        To empower communities, institutions, and individuals by delivering tailored consultancy services that combine research, innovation, and ethical practices for lasting development and social transformation.
+      </p>
+      <h3>Core Values</h3>
+      <ul>
+        <li>Integrity</li>
+        <li>Innovation</li>
+        <li>Client-Centeredness</li>
+        <li>Inclusiveness</li>
+        <li>Sustainability</li>
+        <li>Excellence</li>
+      </ul>
+      <h3>What Sets Us Apart</h3>
+      <ol>
+        <li>Client-Focused Solutions</li>
+        <li>Proven Expertise</li>
+        <li>Timely & Quality Deliverables</li>
+        <li>Evidence-Based</li>
+        <li>Empowerment & Sustainability</li>
+        <li>Multilingual Services</li>
+        <li>Digital Innovation</li>
+        <li>Regional Networks</li>
+        <li>Ethical Practice</li>
+      </ol>
+      <h3>Contact Us</h3>
+      <p>
+        <b>Edith Kangabe</b><br />
+        📞 <a href="tel:+256772864371">+256 772 864 371</a>, <a href="tel:+256753864371">+256 753 864 371</a>, <a href="tel:+256726150979">+256 726 150 979</a><br />
+        ✉️ <a href="mailto:kanediagristratechconsltd@gmail.com">kanediagristratechconsltd@gmail.com</a>, <a href="mailto:edith.kangabe@gmail.com">edith.kangabe@gmail.com</a><br />
+        📍 Wandegeya Market, Mulondo Road 2, North Wing, 1st Floor, Room: NFF 007, Kampala, Uganda<br />
+        🌐 <a href="https://kastc.ct.ws">Website</a><br />
+        🔗 Facebook: KANEDI Agri-Stra-Tech | LinkedIn: Edith Kangabe | Twitter/Instagram: @AgriStraTechLtd
+      </p>
+      <p>
+        Want to Work With Us?<br />
+        <a href="/contact">👉 Get in Touch</a> | <a href="/quote">👉 Request a Free Quote</a>
+      </p>
+    </div>
+  );
+}
+import React from "react";
+
+const competencies = [
+  {
+    skill: "Research & Data Analysis",
+    application: "Conducting academic/business research, market studies, baseline/end line surveys, policy briefs",
+    valueAddition: "Evidence-based insights, actionable recommendations, high-quality publications"
+  },
+  {
+    skill: "Proposal Writing & Grants Management",
+    application: "Donor-aligned proposal design, budgeting, logical frameworks, fundraising support",
+    valueAddition: "Increased funding success, tailored donor strategies, sustainable financing"
+  },
+  {
+    skill: "Monitoring, Evaluation, Accountability & Learning (MEAL)",
+    application: "Designing MEAL frameworks, real-time dashboards, outcome and impact assessments",
+    valueAddition: "Improved accountability, adaptive learning, donor confidence"
+  },
+  {
+    skill: "Strategic & Business Planning",
+    application: "Developing NGO/SME strategic plans, feasibility studies, SWOT analyses",
+    valueAddition: "Growth-oriented strategies, competitive positioning, long-term sustainability"
+  },
+  {
+    skill: "Agriculture & Agribusiness Advisory",
+    application: "Value chain analysis, climate-smart agriculture, agritech adoption",
+    valueAddition: "Increased farmer resilience, improved market access, sustainable farming systems"
+  },
+  {
+    skill: "Public Health & Community Development",
+    application: "Designing health outreach programs, behaviour change communication, predictive analytics",
+    valueAddition: "Healthier communities, data-informed interventions, scalable outreach models"
+  },
+  {
+    skill: "Education & Training",
+    application: "Curriculum design, capacity-building workshops, e-learning integration",
+    valueAddition: "Enhanced skills, participatory learning, youth & women empowerment"
+  },
+  {
+    skill: "Digital Innovation & ICT",
+    application: "Data visualization, dashboards, AI integration, block chain data systems",
+    valueAddition: "Tech-driven efficiency, real-time reporting, improved data integrity"
+  },
+  {
+    skill: "Policy Analysis & Advocacy",
+    application: "Policy reviews, impact assessments, advocacy campaigns, stakeholder dialogues",
+    valueAddition: "Evidence-informed policies, stronger advocacy voice, community influence"
+  },
+  {
+    skill: "Environmental & Sustainability Advisory",
+    application: "Environmental impact assessments, sustainability reports, climate risk management",
+    valueAddition: "Climate resilience, eco-friendly models, green financing opportunities"
+  },
+  {
+    skill: "Business & Financial Management",
+    application: "Business plans, compliance audits, fund management, risk assessment",
+    valueAddition: "Transparent financial systems, donor trust, stronger business models"
+  },
+  {
+    skill: "Stakeholder Engagement & Communication",
+    application: "Strategic communication plans, conflict resolution, media relations",
+    valueAddition: "Inclusive participation, stronger partnerships, enhanced visibility"
+  },
+  {
+    skill: "Capacity Building & Organizational Development",
+    application: "Leadership coaching, change management, team building, gamified training",
+    valueAddition: "Stronger institutions, empowered leaders, adaptive organizations"
+  },
+  {
+    skill: "Knowledge Management & Documentation",
+    application: "Best practice documentation, SOPs, institutional memory systems",
+    valueAddition: "Continuous learning, efficiency, accessible organizational knowledge"
+  },
+  {
+    skill: "Event Planning & Facilitation",
+    application: "Organizing conferences, workshops, stakeholder forums",
+    valueAddition: "Seamless execution, inclusive dialogue, knowledge sharing platforms"
+  },
+  {
+    skill: "Digital Literacy & Tech Integration",
+    application: "ICT infrastructure training, digital adoption, e-learning support",
+    valueAddition: "Digital empowerment, improved efficiency, modernized operations"
+  }
+];
+
+export default function CompetencyFramework() {
+  return (
+    <div className="competency-framework">
+      <h2>COMPETENCY FRAMEWORK</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Skill Area</th>
+            <th>Application in Services</th>
+            <th>Value Addition</th>
+          </tr>
+        </thead>
+        <tbody>
+          {competencies.map((comp, idx) => (
+            <tr key={idx}>
+              <td>{comp.skill}</td>
+              <td>{comp.application}</td>
+              <td>{comp.valueAddition}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p>
+        This table positions KANEDI as a multi-sectoral, innovation-driven consultancy with skills directly linked to services and client impact.
+      </p>
+    </div>
+  );
+}
+import React from "react";
+import { Link } from "react-router-dom";
+
+const services = [
+  "Research & Academic Writing",
+  "Proposal Writing & Grants Support",
+  "Project Management & M&E",
+  "Strategic & Business Planning",
+  "Capacity Building & Training",
+  "Technical Editing & Quality Assurance",
+  "Digital & Innovation Advisory",
+  "Stakeholder Engagement & Communication",
+  "MEAL (Monitoring, Evaluation, Accountability, Learning)",
+  "Agribusiness & Agricultural Consultancy",
+  "Policy Analysis & Advocacy",
+  "Grant & Fund Management",
+  "Data Management & Visualization",
+  "Sustainability & Environmental Consultancy",
+  "Business Development & Marketing Support",
+  "Capacity Assessment & Organizational Development",
+  "Technology Integration & Digital Literacy",
+  "Risk Management & Compliance",
+  "Communication & Media Relations",
+  "Event Planning & Facilitation",
+  "Grant Proposal Review & Capacity Building",
+  "Monitoring Tools & Dashboard Development",
+  "Sustainability Reporting & Impact Measurement",
+  "Knowledge Management & Documentation",
+  "Public Health & Community Outreach",
+  "Workplace Proposals / Operational Proposals"
+];
+
+export default function ServiceList() {
+  return (
+    <div className="service-list">
+      <h1>KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD.</h1>
+      <p><em>‘Grow Smart, Live Green’</em></p>
+      <h2>Our Services</h2>
+      <ul>
+        {services.map((service, idx) => (
+          <li key={service}>
+            <Link to={`/services/${idx + 1}`}>{service}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+import React from "react";
+import { useParams } from "react-router-dom";
+
+const serviceDetails = [
+  {
+    title: "Research & Academic Writing Services",
+    description: `End-to-end research support for academic clients, businesses, NGOs, government parastatals, and other organizations. Services include thesis and dissertation assistance, research paper development, journal submissions, literature reviews, gap analysis, policy briefs, market research reports, and strategic white papers. Robust data analysis delivers actionable insights tailored to each sector.`,
+    valueAdditions: [
+      "Personalized mentoring",
+      "Publication guidance",
+      "Advanced analytics",
+      "AI plagiarism checks",
+      "Interactive research dashboards",
+      "Open-access journal matchmaking"
+    ]
+  },
+  {
+    title: "Proposal Writing & Grants Support",
+    description: `Crafting donor-aligned project proposals, grant application packaging, concept note development, logical frameworks, budget development, and funding prospect research.`,
+    valueAdditions: [
+      "Customized donor-focused proposals",
+      "Precise budgeting",
+      "Strategic targeting",
+      "Pitch decks with visuals",
+      "Post-submission donor engagement",
+      "Live proposal feedback webinars"
+    ]
+  },
+  {
+    title: "Project Management & Monitoring & Evaluation (M&E)",
+    description: `Project design, implementation, baseline/midline/end line surveys, outcome and impact assessments, risk assessment, mitigation planning, and stakeholder coordination.`,
+    valueAdditions: [
+      "Robust tracking",
+      "Adaptive management training",
+      "Risk mitigation",
+      "Real-time mobile-integrated dashboards",
+      "Adaptive learning loops",
+      "Beneficiary feedback tools"
+    ]
+  },
+  {
+    title: "Strategic & Business Planning",
+    description: `Strategic plan development for NGOs and SMEs, business plans, market feasibility, resource mobilization, stakeholder mapping, competitive analysis, SWOT assessments, sustainability, and scaling strategies.`,
+    valueAdditions: [
+      "Market-driven planning",
+      "Resource mobilization expertise",
+      "Scenario modelling",
+      "Innovation canvases",
+      "Strategy execution tracking"
+    ]
+  },
+  {
+    title: "Capacity Building & Training",
+    description: `Curriculum design, staff and youth training in entrepreneurship, leadership, community development; workshops on M&E, proposal writing, digital reporting; multilingual support; document editing.`,
+    valueAdditions: [
+      "Contextualized training",
+      "Interactive delivery",
+      "Gamified learning",
+      "Mobile micro-learning",
+      "Multilingual support",
+      "Alumni mentorship forums"
+    ]
+  },
+  {
+    title: "Technical Editing & Quality Assurance",
+    description: `Editing and proofreading academic and technical documents, data quality assessments, quality assurance system design, formatting, compliance checks, and policy/report review.`,
+    valueAdditions: [
+      "Precision editing",
+      "Compliance focus",
+      "AI-integrated quality review tools",
+      "Style guide creation",
+      "Accessibility-enhanced formatting"
+    ]
+  },
+  {
+    title: "Digital & Innovation Advisory",
+    description: `Digital transformation through project reporting tools, data visualization, ICT integration, innovation hub support, and technology adoption capacity building.`,
+    valueAdditions: [
+      "Cutting-edge tech solutions",
+      "Digital capacity strengthening",
+      "Innovation boot camps",
+      "Open-source toolkits",
+      "Block chain data integrity solutions"
+    ]
+  },
+  {
+    title: "Stakeholder Engagement & Communication",
+    description: `Designing engagement plans, facilitating dialogues, conflict resolution, communication strategy development, donor and community reporting.`,
+    valueAdditions: [
+      "Inclusive engagement",
+      "Conflict management",
+      "Strategic communication",
+      "Virtual town halls",
+      "Interactive stakeholder maps",
+      "Digital storytelling"
+    ]
+  },
+  {
+    title: "Monitoring, Evaluation, Accountability, and Learning (MEAL)",
+    description: `Designing MEAL frameworks, capacity building in adaptive management, data collection and analysis, learning workshops, feedback mechanisms, and reporting.`,
+    valueAdditions: [
+      "Learning-focused MEAL",
+      "Data-driven adaptation",
+      "Learning repositories",
+      "Real-time beneficiary voice capture",
+      "AI-driven trend detection"
+    ]
+  },
+  {
+    title: "Agribusiness & Agricultural Consultancy",
+    description: `Value chain analysis, market access facilitation, climate-smart agriculture advisory, sustainable farming, and agribusiness start-up support.`,
+    valueAdditions: [
+      "Market-focused agri-solutions",
+      "Sustainability",
+      "Agritech matching",
+      "Farmer innovation labs",
+      "Weather-smart tools"
+    ]
+  },
+  {
+    title: "Policy Analysis & Advocacy",
+    description: `Policy reviews, impact assessments, recommendations, advocacy campaigns, and stakeholder policy dialogues/workshops.`,
+    valueAdditions: [
+      "Evidence-based policy work",
+      "Advocacy strategies",
+      "Policy simulations",
+      "Infographics",
+      "Digital petition platforms"
+    ]
+  },
+  {
+    title: "Grant & Fund Management",
+    description: `Financial tracking, compliance audits, risk management, capacity building in financial management, donor liaison and reporting.`,
+    valueAdditions: [
+      "Transparent fund management",
+      "Risk mitigation",
+      "Automated dashboards",
+      "Financial storytelling",
+      "Risk scenario testing"
+    ]
+  },
+  {
+    title: "Data Management & Visualization",
+    description: `Database design, data cleaning and analysis, visualization dashboards, GIS mapping, and data software training.`,
+    valueAdditions: [
+      "Visual storytelling",
+      "Capacity building",
+      "Interactive dashboards",
+      "Data workshops",
+      "Mobile data collection"
+    ]
+  },
+  {
+    title: "Sustainability & Environmental Consultancy",
+    description: `Environmental impact assessments, sustainability plans, climate risk assessments, community environmental awareness, and training.`,
+    valueAdditions: [
+      "Environmental stewardship",
+      "Climate resilience",
+      "Eco-audit toolkits",
+      "Carbon calculators",
+      "Green financing linkages"
+    ]
+  },
+  {
+    title: "Business Development & Marketing Support",
+    description: `Market analysis, branding, digital marketing, sales funnel development, CRM setup and training.`,
+    valueAdditions: [
+      "Growth-focused marketing",
+      "Customer retention",
+      "AI customer journey analysis",
+      "Brand audits",
+      "Influencer networks"
+    ]
+  },
+  {
+    title: "Capacity Assessment & Organizational Development",
+    description: `Organizational capacity assessments, capacity strengthening plans, change management support, leadership coaching, team building.`,
+    valueAdditions: [
+      "Strengthened performance",
+      "Leadership growth",
+      "Gamified tools",
+      "Peer learning networks",
+      "Virtual change labs"
+    ]
+  },
+  {
+    title: "Technology Integration & Digital Literacy",
+    description: `Training on digital tools, digital literacy programs, ICT infrastructure assessment, e-learning and remote work support.`,
+    valueAdditions: [
+      "Digital empowerment",
+      "Adoption support",
+      "Adoption scorecards",
+      "Community digital champions",
+      "ICT Chabot support"
+    ]
+  },
+  {
+    title: "Risk Management & Compliance",
+    description: `Risk identification and mitigation, compliance audits, internal control system development, governance and ethics training.`,
+    valueAdditions: [
+      "Risk resilience",
+      "Compliance assurance",
+      "AI risk scanning",
+      "E-learning",
+      "Simulated compliance testing"
+    ]
+  },
+  {
+    title: "Communication & Media Relations",
+    description: `Press releases, media statements, social media strategy, crisis communication, media events.`,
+    valueAdditions: [
+      "Enhanced visibility",
+      "Reputation management",
+      "Sentiment tracking",
+      "Story banks",
+      "Media pitching clinics"
+    ]
+  },
+  {
+    title: "Event Planning & Facilitation",
+    description: `Workshop and conference design, stakeholder meetings, virtual event coordination, event documentation and reporting.`,
+    valueAdditions: [
+      "Seamless execution",
+      "Inclusive facilitation",
+      "Real-time feedback apps",
+      "Facilitation kits",
+      "Carbon tracking"
+    ]
+  },
+  {
+    title: "Grant Proposal Review & Capacity Building",
+    description: `Review and strengthening of proposals, team training on writing techniques, donor-specific tailoring.`,
+    valueAdditions: [
+      "Improved success rates",
+      "Tailored coaching",
+      "Donor panel simulations",
+      "Annotated templates",
+      "AI scoring tools"
+    ]
+  },
+  {
+    title: "Monitoring Tools & Dashboard Development",
+    description: `Custom monitoring tools and checklists, real-time dashboards, staff training.`,
+    valueAdditions: [
+      "Real-time monitoring",
+      "User-friendly and offline-compatible dashboards",
+      "KPI calculators",
+      "Colour-blind visuals"
+    ]
+  },
+  {
+    title: "Sustainability Reporting & Impact Measurement",
+    description: `Sustainability and CSR reports, social/economic/environmental impact measurement, impact investment advice.`,
+    valueAdditions: [
+      "Credible reporting",
+      "Impact optimization",
+      "Storytelling templates",
+      "Interactive digital reports",
+      "ROI calculators"
+    ]
+  },
+  {
+    title: "Knowledge Management & Documentation",
+    description: `Knowledge-sharing platforms, documentation of best practices, organizational manuals, SOPs.`,
+    valueAdditions: [
+      "Institutional memory",
+      "Improved learning",
+      "Voice-to-text tools",
+      "Gamification",
+      "Custom knowledge portals"
+    ]
+  },
+  {
+    title: "Public Health & Community Outreach",
+    description: `Community health program design, behaviour change communication, health data collection and analysis.`,
+    valueAdditions: [
+      "Community-driven improvements",
+      "Data-informed outreach",
+      "Mobile health messaging",
+      "Predictive analytics",
+      "Digital referral systems"
+    ]
+  },
+  {
+    title: "Workplace Proposals / Operational Proposals",
+    description: `Development and review of workplace and operational proposals, streamlining business operations, process optimization, and change management planning.`,
+    valueAdditions: [
+      "Operational efficiency",
+      "Process automation",
+      "Change management",
+      "Stakeholder alignment",
+      "Impact-focused action plans"
+    ]
+  }
+];
+
+export default function ServiceTemplate() {
+  const { id } = useParams();
+  const idx = Number(id) - 1;
+  const service = serviceDetails[idx];
+
+  if (!service) return <div>Service not found.</div>;
+
+  return (
+    <div className="service-template">
+      <h1>{service.title}</h1>
+      <p>{service.description}</p>
+      <h3>Value Additions:</h3>
+      <ul>
+        {service.valueAdditions.map((v, i) => (
+          <li key={i}>{v}</li>
+        ))}
+      </ul>
+      <Link to="/services">← Back to All Services</Link>
+    </div>
+  );
+}
 <!DOCTYPE html>
 </ul>
 </aside>
@@ -69,3 +604,54 @@
 </footer>
 </body>
 </html>
+import React from "react";
+
+export default function Contact() {
+  return (
+    <div className="contact">
+      <h2>Contact Us</h2>
+      <p>
+        For customized consultancy, training, and research support that delivers measurable impact, contact Edith Kangabe at KANEDI Agri-Stra-Tech Consultants Ltd.<br />
+        Let’s partner to make a difference.
+      </p>
+      <ul>
+        <li>📞 Call / WhatsApp: <a href="tel:+256772864371">+256 772 864 371</a>, <a href="tel:+256753864371">+256 753 864 371</a>, <a href="tel:+256726150979">+256 726 150 979</a></li>
+        <li>✉️ Emails: <a href="mailto:kanediagristratechconsltd@gmail.com">kanediagristratechconsltd@gmail.com</a>, <a href="mailto:edith.kangabe@gmail.com">edith.kangabe@gmail.com</a></li>
+        <li>📍 Location: Wandegeya Market, Mulondo Road 2, North Wing, 1st Floor, Room: NFF 007, Kampala, Uganda</li>
+        <li>🌐 Website: <a href="https://kastc.ct.ws">kastc.ct.ws</a></li>
+        <li>
+          🔗 Social Media:<br />
+          Facebook: KANEDI Agri-Stra-Tech<br />
+          LinkedIn: Edith Kangabe<br />
+          Twitter/Instagram: @AgriStraTechLtd
+        </li>
+      </ul>
+      <p>
+        Want to Work With Us?<br />
+        <a href="/contact">👉 Get in Touch</a> | <a href="/quote">👉 Request a Free Quote</a>
+      </p>
+    </div>
+  );
+}
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ServiceList from "./pages/services/ServiceList";
+import ServiceTemplate from "./pages/services/ServiceTemplate";
+import About from "./pages/About";
+import CompetencyFramework from "./pages/CompetencyFramework";
+import Contact from "./pages/Contact";
+
+export default function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={About} />
+        <Route exact path="/services" component={ServiceList} />
+        <Route path="/services/:id" component={ServiceTemplate} />
+        <Route path="/competency" component={CompetencyFramework} />
+        <Route path="/contact" component={Contact} />
+        {/* Add more routes as needed */}
+      </Switch>
+    </Router>
+  );
+}
