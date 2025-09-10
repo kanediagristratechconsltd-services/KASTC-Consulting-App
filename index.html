@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD</title>
+    <title>KanediAgri App - KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script>
@@ -11,9 +11,10 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#FF8C00', // KANEDI Orange
-                        secondary: '#228B22', // KANEDI Green
-                        accent: '#FFD700', // KANEDI Yellow/Gold
+                        primary: '#228B22', // KANEDI Green (Agricultural focus)
+                        secondary: '#FF8C00', // KANEDI Orange
+                        accent: '#32CD32', // Lime Green (Agricultural)
+                        brown: '#8B4513', // Soil Brown
                         lightGreen: '#9ACD32' // Light green from logo
                     }
                 }
@@ -28,18 +29,18 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
                     <div class="relative">
-                        <!-- Logo-inspired design -->
-                        <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center relative overflow-hidden">
+                        <!-- Agricultural-focused logo design -->
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center relative overflow-hidden">
                             <div class="absolute top-0 right-0 w-6 h-6 bg-accent rounded-full opacity-80"></div>
                             <div class="z-10 flex items-center justify-center">
-                                <span class="text-white font-bold text-xs">KASTC</span>
+                                <i class="fas fa-seedling text-white text-lg"></i>
                             </div>
                             <div class="absolute bottom-1 left-1 right-1 h-2 bg-secondary rounded opacity-60"></div>
                         </div>
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold text-primary">KANEDI</h1>
-                        <p class="text-xs text-secondary font-medium">AGRI-STRA-TECH CONSULTANTS SMC LTD</p>
+                        <h1 class="text-xl font-bold text-primary">KanediAgri App</h1>
+                        <p class="text-xs text-secondary font-medium">KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD</p>
                         <p class="text-xs text-gray-600 dark:text-gray-400 italic">'Grow Smart, Live Green'</p>
                     </div>
                 </div>
@@ -70,24 +71,49 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-primary/10 to-secondary/10">
+    <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-primary/10 to-accent/10">
         <div class="container mx-auto px-4 py-16">
-            <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-6xl mx-auto text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    Empowering Ideas | Transforming Communities | Delivering Impact
+                    Transforming Agriculture Through Science & Innovation
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4">
-                    Ugandan women- and youth-led firm offering consulting and advisory services in agriculture, education, health, digital innovation, and business
+                    Women- and youth-led consulting firm specializing in sustainable agriculture, land management, GIS services, and comprehensive research solutions
                 </p>
-                <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 italic">
-                    "Grow Smart, Live Green" - 10+ years of experience empowering communities through inclusive, tech-driven, evidence-based strategies
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 italic">
+                    "Supporting academicians, professionals, businesses, institutions, industries, and individuals—including those with limited or no formal education"
                 </p>
+                
+                <!-- Key Service Highlights -->
+                <div class="grid md:grid-cols-5 gap-4 mb-8">
+                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+                        <i class="fas fa-flask text-2xl text-brown mb-2"></i>
+                        <h4 class="font-semibold text-sm">Soil Testing</h4>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+                        <i class="fas fa-map text-2xl text-primary mb-2"></i>
+                        <h4 class="font-semibold text-sm">Farm Planning</h4>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+                        <i class="fas fa-satellite text-2xl text-blue-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">GIS Services</h4>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+                        <i class="fas fa-graduation-cap text-2xl text-secondary mb-2"></i>
+                        <h4 class="font-semibold text-sm">Research & Training</h4>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+                        <i class="fas fa-chart-line text-2xl text-accent mb-2"></i>
+                        <h4 class="font-semibold text-sm">30+ Services</h4>
+                    </div>
+                </div>
+                
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <button onclick="scrollToSection('services')" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-colors">
-                        Our 26 Services
+                        Explore All Our Services
                     </button>
                     <button onclick="scrollToSection('pricing')" class="border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors">
-                        View Pricing
+                        View Pricing (USD/UGX)
                     </button>
                 </div>
             </div>
@@ -97,109 +123,373 @@
     <!-- Core Values Section -->
     <section class="py-16 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Core Values</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">🌿 Our Core Values</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                     <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-shield-alt text-2xl text-primary"></i>
+                        <i class="fas fa-leaf text-2xl text-primary"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Integrity</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Open financial reporting in donor-funded projects and ethical delivery of consulting assignments.</p>
+                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+                    <p class="text-gray-600 dark:text-gray-300">We promote practices that protect soil, water, biodiversity, and ecosystems for future generations.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                     <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
                         <i class="fas fa-lightbulb text-2xl text-secondary"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Innovation</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Mobile apps for farmer training and AI-driven tools for health and education data analysis.</p>
+                    <p class="text-gray-600 dark:text-gray-300">We leverage modern technologies like GIS, remote sensing, and precision farming to deliver cutting-edge solutions.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                     <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-users text-2xl text-accent"></i>
+                        <i class="fas fa-shield-alt text-2xl text-accent"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Client-Centeredness</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Co-designed digital learning toolkits and participatory business strategy sessions.</p>
+                    <h3 class="text-xl font-semibold mb-3">Integrity</h3>
+                    <p class="text-gray-600 dark:text-gray-300">We uphold honesty, transparency, and accountability in all our engagements.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                     <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-hands-helping text-2xl text-primary"></i>
+                        <i class="fas fa-users text-2xl text-primary"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Inclusiveness</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Youth-led health outreach campaigns and gender-balanced leadership training.</p>
+                    <p class="text-gray-600 dark:text-gray-300">We work with farmers of all scales, cooperatives, women, and youth to ensure equitable access to opportunities.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                     <div class="bg-secondary/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-leaf text-2xl text-secondary"></i>
+                        <i class="fas fa-medal text-2xl text-secondary"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Regenerative farming models and long-term digital solutions for comprehensive management.</p>
+                    <h3 class="text-xl font-semibold mb-3">Professionalism</h3>
+                    <p class="text-gray-600 dark:text-gray-300">We deliver services with expertise, reliability, and respect for our clients' needs.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                     <div class="bg-accent/10 p-3 rounded-lg w-fit mb-4">
-                        <i class="fas fa-star text-2xl text-accent"></i>
+                        <i class="fas fa-mountain text-2xl text-accent"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Excellence</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Results-based monitoring systems and continuous capacity-building for lasting solutions.</p>
+                    <h3 class="text-xl font-semibold mb-3">Resilience</h3>
+                    <p class="text-gray-600 dark:text-gray-300">We support farming communities to adapt and thrive despite climate and economic challenges.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                    <div class="bg-primary/10 p-3 rounded-lg w-fit mb-4">
+                        <i class="fas fa-handshake text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Partnership</h3>
+                    <p class="text-gray-600 dark:text-gray-300">We collaborate with stakeholders, governments, NGOs, and private actors to achieve sustainable impact.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Comprehensive Services Section -->
     <section id="services" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our 26 Comprehensive Services</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">🌾 Our Comprehensive Services</h2>
             
-            <!-- Service Categories Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-book text-3xl text-primary mb-4"></i>
-                    <h3 class="font-semibold mb-2">Research & Writing</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Academic research, thesis support, publications</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-file-alt text-3xl text-secondary mb-4"></i>
-                    <h3 class="font-semibold mb-2">Proposals & Grants</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Donor proposals, grant writing, workplace proposals</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-tasks text-3xl text-accent mb-4"></i>
-                    <h3 class="font-semibold mb-2">Project Management</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">M&E, implementation, coordination</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-seedling text-3xl text-primary mb-4"></i>
-                    <h3 class="font-semibold mb-2">26 Services Total</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Digital innovation, agriculture, health, workplace solutions</p>
+            <!-- Main Agricultural Services -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center text-primary">🌱 Main Services: Sustainable Agricultural & Land Management Solutions</h3>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    
+                    <!-- Soil Testing Services - Detailed -->
+                    <div class="bg-gradient-to-br from-brown/10 to-primary/10 p-8 rounded-xl shadow-lg border border-brown/20">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-flask text-4xl text-brown mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">🌱 Soil Testing Services</h4>
+                                <p class="text-sm text-gray-600">A healthy farm starts with healthy soil</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">Scientific soil testing that empowers farmers to make informed decisions.</p>
+                        
+                        <h5 class="font-semibold mb-3">Activities Involved:</h5>
+                        <div class="space-y-2 text-sm mb-4">
+                            <p>• <strong>Soil Sampling:</strong> Collecting representative samples for accuracy</p>
+                            <p>• <strong>Laboratory Analysis:</strong> Testing soil for pH, macronutrients (NPK), micronutrients (Zn, Fe, B), and organic matter</p>
+                            <p>• <strong>Soil Texture & Structure:</strong> Identifying sandy, clay, loam, or silt soils and their impact on crop growth</p>
+                            <p>• <strong>Chemical Properties:</strong> Measuring salinity, acidity, and harmful residues</p>
+                            <p>• <strong>Soil Fertility Reports:</strong> Farmer-friendly reports with recommendations</p>
+                            <p>• <strong>Recommendations:</strong> Guidance on soil amendments (lime, compost, manure, bio-fertilizers) and fertilizer schedules</p>
+                        </div>
+
+                        <h5 class="font-semibold mb-3">Benefits to Farmers:</h5>
+                        <div class="space-y-1 text-sm mb-6">
+                            <p>✔️ Reduces unnecessary input costs</p>
+                            <p>✔️ Improves crop yields and quality</p>
+                            <p>✔️ Restores and maintains soil health</p>
+                        </div>
+
+                        <div class="bg-brown/10 p-4 rounded-lg text-center">
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Basic testing:</span>
+                                    <span class="font-bold text-brown">$99 / UGX 370,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Comprehensive analysis:</span>
+                                    <span class="font-bold text-brown">$299 / UGX 1,120,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Large farm assessment:</span>
+                                    <span class="font-bold text-brown">$499 / UGX 1,870,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('soil-testing', 99)" class="w-full mt-4 bg-brown text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+
+                    <!-- Farm Planning Services - Detailed -->
+                    <div class="bg-gradient-to-br from-primary/10 to-accent/10 p-8 rounded-xl shadow-lg border border-primary/20">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-map-marked-alt text-4xl text-primary mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">🌾 Farm Planning Services</h4>
+                                <p class="text-sm text-gray-600">Every successful harvest begins with a plan</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">Our farm planning provides a roadmap for productivity and profitability.</p>
+                        
+                        <h5 class="font-semibold mb-3">Activities Involved:</h5>
+                        <div class="space-y-2 text-sm mb-4">
+                            <p>• <strong>Resource Assessment:</strong> Evaluating available land, water, and infrastructure</p>
+                            <p>• <strong>Enterprise Selection:</strong> Choosing suitable crops and livestock</p>
+                            <p>• <strong>Crop Rotation:</strong> Designing sustainable rotation systems</p>
+                            <p>• <strong>Irrigation Design:</strong> Water management and efficiency planning</p>
+                            <p>• <strong>Input & Financial Planning:</strong> Budgeting for seeds, fertilizers, and equipment</p>
+                            <p>• <strong>Farm Calendar Development:</strong> Seasonal activity scheduling</p>
+                            <p>• <strong>Risk Management Integration:</strong> Incorporating risk mitigation measures</p>
+                        </div>
+
+                        <h5 class="font-semibold mb-3">Benefits:</h5>
+                        <div class="space-y-1 text-sm mb-6">
+                            <p>✔️ Enhances efficiency and reduces risks</p>
+                            <p>✔️ Ensures sustainable land use</p>
+                            <p>✔️ Increases profitability</p>
+                        </div>
+
+                        <div class="bg-primary/10 p-4 rounded-lg text-center">
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Small farm plan:</span>
+                                    <span class="font-bold text-primary">$299 / UGX 1,120,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Medium farm plan:</span>
+                                    <span class="font-bold text-primary">$599 / UGX 2,240,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Large farm/commercial:</span>
+                                    <span class="font-bold text-primary">$999 / UGX 3,740,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('farm-planning', 299)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+
+                    <!-- Land Suitability & Use Planning - Detailed -->
+                    <div class="bg-gradient-to-br from-accent/10 to-secondary/10 p-8 rounded-xl shadow-lg border border-accent/20">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-globe-americas text-4xl text-accent mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">🌍 Land Suitability & Use Planning</h4>
+                                <p class="text-sm text-gray-600">Maximizing land potential sustainably</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">We assess soil, topography, and climate to recommend suitable crops and uses.</p>
+                        
+                        <h5 class="font-semibold mb-3">Activities Involved:</h5>
+                        <div class="space-y-2 text-sm mb-4">
+                            <p>• <strong>Topographic Surveying:</strong> Land slope and elevation analysis</p>
+                            <p>• <strong>Soil Profiling:</strong> Deep soil characteristic assessment</p>
+                            <p>• <strong>Climate Assessment:</strong> Rainfall, temperature, and weather patterns</p>
+                            <p>• <strong>GIS Mapping:</strong> Spatial analysis and visualization</p>
+                            <p>• <strong>Zoning:</strong> Land use classification and planning</p>
+                            <p>• <strong>Sustainable Planning:</strong> Long-term development strategies</p>
+                        </div>
+
+                        <h5 class="font-semibold mb-3">Benefits:</h5>
+                        <div class="space-y-1 text-sm mb-6">
+                            <p>✔️ Maximizes productivity</p>
+                            <p>✔️ Prevents land degradation</p>
+                            <p>✔️ Ensures long-term development</p>
+                        </div>
+
+                        <div class="bg-accent/10 p-4 rounded-lg text-center">
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Basic assessment:</span>
+                                    <span class="font-bold text-accent">$499 / UGX 1,870,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Comprehensive planning:</span>
+                                    <span class="font-bold text-accent">$999 / UGX 3,740,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Large area planning:</span>
+                                    <span class="font-bold text-accent">$1,499 / UGX 5,610,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('land-suitability', 499)" class="w-full mt-4 bg-accent text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+
+                    <!-- Disaster Risk Assessment - Detailed -->
+                    <div class="bg-gradient-to-br from-red-100 to-orange-100 p-8 rounded-xl shadow-lg border border-red-200">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-exclamation-triangle text-4xl text-red-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">⚠️ Disaster Risk Assessment</h4>
+                                <p class="text-sm text-gray-600">Building climate resilience</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">Help farmers prepare, adapt, and thrive despite droughts, floods, pests, and climate shocks.</p>
+                        
+                        <h5 class="font-semibold mb-3">Activities Involved:</h5>
+                        <div class="space-y-2 text-sm mb-4">
+                            <p>• <strong>Risk Identification:</strong> Mapping climate and environmental threats</p>
+                            <p>• <strong>Vulnerability Mapping:</strong> Assessing community and farm vulnerabilities</p>
+                            <p>• <strong>Mitigation Strategies:</strong> Developing risk reduction plans</p>
+                            <p>• <strong>Preparedness Measures:</strong> Emergency response planning</p>
+                            <p>• <strong>Integration with Farm Planning:</strong> Building resilience into farm systems</p>
+                        </div>
+
+                        <h5 class="font-semibold mb-3">Benefits:</h5>
+                        <div class="space-y-1 text-sm mb-6">
+                            <p>✔️ Minimizes losses from disasters</p>
+                            <p>✔️ Builds resilience and adaptability</p>
+                            <p>✔️ Enhances food security</p>
+                        </div>
+
+                        <div class="bg-red-100 p-4 rounded-lg text-center">
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Basic risk assessment:</span>
+                                    <span class="font-bold text-red-600">$399 / UGX 1,490,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Comprehensive analysis:</span>
+                                    <span class="font-bold text-red-600">$799 / UGX 2,990,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">Regional assessment:</span>
+                                    <span class="font-bold text-red-600">$1,299 / UGX 4,860,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('disaster-risk', 399)" class="w-full mt-4 bg-red-600 text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+
+                    <!-- GIS Services - Detailed -->
+                    <div class="bg-gradient-to-br from-blue-100 to-indigo-100 p-8 rounded-xl shadow-lg border border-blue-200 md:col-span-2">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-satellite text-4xl text-blue-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">🗺️ GIS Services</h4>
+                                <p class="text-sm text-gray-600">Modern agriculture thrives on data</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">GIS supports evidence-based farming and planning.</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h5 class="font-semibold mb-3">Activities Involved:</h5>
+                                <div class="space-y-2 text-sm">
+                                    <p>• <strong>Farm Mapping:</strong> Precise boundary and feature mapping</p>
+                                    <p>• <strong>Spatial Analysis:</strong> Land use and resource analysis</p>
+                                    <p>• <strong>Land Use Monitoring:</strong> Change detection and tracking</p>
+                                    <p>• <strong>Precision Farming:</strong> Variable rate application support</p>
+                                    <p>• <strong>Remote Sensing:</strong> Satellite and drone data analysis</p>
+                                    <p>• <strong>Resource Planning:</strong> Optimal resource allocation</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold mb-3">Benefits:</h5>
+                                <div class="space-y-1 text-sm">
+                                    <p>✔️ Improves decision-making with data</p>
+                                    <p>✔️ Reduces costs through precision</p>
+                                    <p>✔️ Enhances resource management</p>
+                                    <p>✔️ Supports climate-smart agriculture</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-100 p-4 rounded-lg">
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div class="text-center">
+                                    <span class="text-sm">Basic mapping:</span>
+                                    <div class="font-bold text-blue-600">$199 / UGX 745,000</div>
+                                </div>
+                                <div class="text-center">
+                                    <span class="text-sm">Advanced analysis:</span>
+                                    <div class="font-bold text-blue-600">$499 / UGX 1,870,000</div>
+                                </div>
+                                <div class="text-center">
+                                    <span class="text-sm">Complete GIS solution:</span>
+                                    <div class="font-bold text-blue-600">$899 / UGX 3,365,000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('gis-services', 199)" class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <!-- NEW: 26th Service Highlight -->
+            <!-- Professional Services Overview -->
             <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-xl mb-12">
                 <div class="text-center">
-                    <div class="bg-primary/20 p-4 rounded-full w-fit mx-auto mb-4">
-                        <i class="fas fa-briefcase text-3xl text-primary"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary">NEW: Workplace & Operational Proposals</h3>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 max-w-4xl mx-auto mb-6">
-                        Practical, problem-solving documents designed to convince management, boards, or funders to adopt workplace and operational improvements. These proposals focus on addressing challenges, improving efficiency, enhancing productivity, and creating sustainable solutions within organizations.
+                    <h3 class="text-2xl font-bold mb-4 text-primary">📚 Other Professional & Technical Services</h3>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 max-w-5xl mx-auto mb-6">
+                        Supporting <strong>academicians, professionals, businesses, institutions, industries, and individuals—including those with limited or no formal education</strong>—by equipping them with practical, knowledge-based solutions that drive growth, resilience, and success.
                     </p>
-                    <div class="grid md:grid-cols-4 gap-4 text-sm">
+                    
+                    <!-- Professional Services Grid -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
-                            <i class="fas fa-cogs text-primary mb-2"></i>
-                            <p><strong>Efficiency Solutions</strong><br>Process improvement & workflow optimization</p>
+                            <i class="fas fa-book text-primary mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">Research & Academic Writing</h5>
+                            <p class="text-xs text-gray-600 mt-2">Thesis, dissertations, publications</p>
                         </div>
                         <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
-                            <i class="fas fa-users-cog text-secondary mb-2"></i>
-                            <p><strong>Workplace Policies</strong><br>HR procedures & management systems</p>
+                            <i class="fas fa-file-alt text-secondary mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">Proposal Writing & Grants</h5>
+                            <p class="text-xs text-gray-600 mt-2">Donor proposals, funding support</p>
                         </div>
                         <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
-                            <i class="fas fa-chart-line text-accent mb-2"></i>
-                            <p><strong>Productivity Enhancement</strong><br>Performance & output optimization</p>
+                            <i class="fas fa-chart-line text-accent mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">Strategic Planning</h5>
+                            <p class="text-xs text-gray-600 mt-2">Business plans, market analysis</p>
                         </div>
                         <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
-                            <i class="fas fa-seedling text-primary mb-2"></i>
-                            <p><strong>Sustainable Solutions</strong><br>Long-term organizational improvements</p>
+                            <i class="fas fa-graduation-cap text-primary mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">Capacity Building</h5>
+                            <p class="text-xs text-gray-600 mt-2">Training, skills development</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
+                            <i class="fas fa-tasks text-secondary mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">Project Management</h5>
+                            <p class="text-xs text-gray-600 mt-2">M&E, implementation</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
+                            <i class="fas fa-laptop text-accent mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">Digital Innovation</h5>
+                            <p class="text-xs text-gray-600 mt-2">Technology integration</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
+                            <i class="fas fa-database text-primary mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">Data Management</h5>
+                            <p class="text-xs text-gray-600 mt-2">Analysis, visualization</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg">
+                            <i class="fas fa-leaf text-secondary mb-2 text-2xl"></i>
+                            <h5 class="font-semibold">30+ More Services</h5>
+                            <p class="text-xs text-gray-600 mt-2">Complete professional suite</p>
                         </div>
                     </div>
                 </div>
@@ -207,23 +497,31 @@
 
             <div class="text-center">
                 <button onclick="scrollToSection('pricing')" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-colors">
-                    View All Service Pricing
+                    View Complete Service Pricing (USD/UGX)
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Comprehensive Pricing Section -->
+    <!-- Detailed Pricing Section -->
     <section id="pricing" class="py-16 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Complete Service Pricing Guide</h2>
-            <p class="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-                Transparent pricing for all 26 services with global payment options. Custom packages available for multiple services.
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">💰 Complete Service Pricing Guide</h2>
+            <p class="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto">
+                Transparent pricing for all our agricultural and professional services in both USD and UGX. Custom packages available for multiple services.
             </p>
+
+            <!-- Currency Info -->
+            <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg mb-8 text-center">
+                <p class="text-blue-800 dark:text-blue-200">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    <strong>Currency Exchange:</strong> Prices shown in USD and UGX (1 USD ≈ 3,740 UGX as of 2024)
+                </p>
+            </div>
 
             <!-- Payment Methods Overview -->
             <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-xl mb-12">
-                <h3 class="text-xl font-semibold text-center mb-4">We Accept Global Payments</h3>
+                <h3 class="text-xl font-semibold text-center mb-4">💳 We Accept Global Payments</h3>
                 <div class="flex flex-wrap justify-center items-center gap-6">
                     <div class="flex items-center space-x-2">
                         <i class="fab fa-paypal text-2xl text-blue-600"></i>
@@ -244,516 +542,414 @@
                 </div>
             </div>
 
-            <!-- Service Categories with Pricing -->
-            
-            <!-- Research & Academic Services -->
+            <!-- Agricultural Services Detailed Pricing -->
             <div class="mb-16">
-                <h3 class="text-2xl font-semibold mb-8 text-center text-primary">Research & Academic Services (Services 1-6)</h3>
+                <h3 class="text-2xl font-semibold mb-8 text-center text-primary">🌱 Agricultural & Land Management Services (USD/UGX)</h3>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    
+                    <!-- Soil Testing Detailed Pricing -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-flask text-2xl text-brown mr-3"></i>
+                            <h4 class="font-semibold text-lg">🌱 Soil Testing Services</h4>
+                        </div>
+                        <div class="space-y-3 mb-4">
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Basic Soil Analysis</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-brown">$99</div>
+                                        <div class="text-xs text-gray-600">UGX 370,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">pH, basic NPK, organic matter</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Comprehensive Analysis</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-brown">$299</div>
+                                        <div class="text-xs text-gray-600">UGX 1,120,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Full nutrient profile, micronutrients, recommendations</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Large Farm Assessment</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-brown">$499</div>
+                                        <div class="text-xs text-gray-600">UGX 1,870,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Multiple samples, detailed mapping, management plan</p>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('soil-testing', 99)" class="w-full bg-brown text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+
+                    <!-- Farm Planning Detailed Pricing -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marked-alt text-2xl text-primary mr-3"></i>
+                            <h4 class="font-semibold text-lg">🌾 Farm Planning Services</h4>
+                        </div>
+                        <div class="space-y-3 mb-4">
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Small Farm Plan (1-5 acres)</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-primary">$299</div>
+                                        <div class="text-xs text-gray-600">UGX 1,120,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Basic resource assessment, crop selection</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Medium Farm Plan (5-20 acres)</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-primary">$599</div>
+                                        <div class="text-xs text-gray-600">UGX 2,240,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Detailed planning, irrigation design, financial projections</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Large/Commercial Farm (20+ acres)</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-primary">$999</div>
+                                        <div class="text-xs text-gray-600">UGX 3,740,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Comprehensive planning, machinery, market analysis</p>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('farm-planning', 299)" class="w-full bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+
+                    <!-- Land Suitability Detailed Pricing -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-globe-americas text-2xl text-accent mr-3"></i>
+                            <h4 class="font-semibold text-lg">🌍 Land Suitability Planning</h4>
+                        </div>
+                        <div class="space-y-3 mb-4">
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Basic Assessment</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-accent">$499</div>
+                                        <div class="text-xs text-gray-600">UGX 1,870,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Soil profiling, basic GIS mapping</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Comprehensive Planning</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-accent">$999</div>
+                                        <div class="text-xs text-gray-600">UGX 3,740,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Detailed surveying, climate analysis, zoning</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Large Area Planning</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-accent">$1,499</div>
+                                        <div class="text-xs text-gray-600">UGX 5,610,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Regional planning, sustainability strategies</p>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('land-suitability', 499)" class="w-full bg-accent text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+
+                    <!-- GIS Services Detailed Pricing -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-satellite text-2xl text-blue-600 mr-3"></i>
+                            <h4 class="font-semibold text-lg">🗺️ GIS Services</h4>
+                        </div>
+                        <div class="space-y-3 mb-4">
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Basic Farm Mapping</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-blue-600">$199</div>
+                                        <div class="text-xs text-gray-600">UGX 745,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Boundary mapping, basic features</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Advanced Spatial Analysis</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-blue-600">$499</div>
+                                        <div class="text-xs text-gray-600">UGX 1,870,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Land use analysis, remote sensing</p>
+                            </div>
+                            <div class="border-b pb-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Complete GIS Solution</span>
+                                    <div class="text-right">
+                                        <div class="font-bold text-blue-600">$899</div>
+                                        <div class="text-xs text-gray-600">UGX 3,365,000</div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-1">Full system, training, ongoing support</p>
+                            </div>
+                        </div>
+                        <button onclick="showPaymentModal('gis-services', 199)" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Services Detailed Pricing -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center text-secondary">📚 Professional & Technical Services (USD/UGX)</h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
-                    <!-- Service 1: Research & Academic Writing -->
+                    <!-- Research & Academic Writing -->
                     <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-book text-2xl text-primary mr-3"></i>
                             <h4 class="font-semibold text-lg">Research & Academic Writing</h4>
                         </div>
-                        <div class="space-y-2 text-sm mb-4">
+                        <div class="space-y-2 text-xs mb-4">
                             <p>• Thesis & dissertation support</p>
                             <p>• Research papers & publications</p>
                             <p>• Literature reviews & analysis</p>
-                            <p>• AI plagiarism checks included</p>
+                            <p>• Support for all education levels</p>
                         </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Basic (10-20 pages):</span>
-                                    <span class="font-bold text-primary">$499</span>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-sm">Basic research (10-20 pages):</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-primary">$299</div>
+                                    <div>UGX 1,120,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Professional (21-50 pages):</span>
-                                    <span class="font-bold text-primary">$1,299</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">Professional (21-50 pages):</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-primary">$699</div>
+                                    <div>UGX 2,615,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Premium (50+ pages):</span>
-                                    <span class="font-bold text-primary">$2,999</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">Comprehensive (50+ pages):</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-primary">$1,299</div>
+                                    <div>UGX 4,860,000</div>
                                 </div>
                             </div>
                         </div>
-                        <button onclick="showPaymentModal('research-writing', 499)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        <button onclick="showPaymentModal('research-writing', 299)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
                             Get Quote
                         </button>
                     </div>
 
-                    <!-- Service 2: Proposal Writing & Grants -->
+                    <!-- Proposal Writing & Grants -->
                     <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-file-alt text-2xl text-secondary mr-3"></i>
                             <h4 class="font-semibold text-lg">Proposal Writing & Grants</h4>
                         </div>
-                        <div class="space-y-2 text-sm mb-4">
+                        <div class="space-y-2 text-xs mb-4">
                             <p>• Donor-aligned proposals</p>
                             <p>• Grant applications</p>
                             <p>• Budget development</p>
-                            <p>• Post-submission support</p>
+                            <p>• Support for all sectors</p>
                         </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Small grants ($25K):</span>
-                                    <span class="font-bold text-secondary">$699</span>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-sm">Small grants (up to $25K):</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-secondary">$499</div>
+                                    <div>UGX 1,870,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Medium grants ($100K):</span>
-                                    <span class="font-bold text-secondary">$1,799</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">Medium grants ($25K-$100K):</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-secondary">$999</div>
+                                    <div>UGX 3,740,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Large grants ($100K+):</span>
-                                    <span class="font-bold text-secondary">$4,999</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">Large grants ($100K+):</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-secondary">$1,999</div>
+                                    <div>UGX 7,480,000</div>
                                 </div>
                             </div>
                         </div>
-                        <button onclick="showPaymentModal('proposal-writing', 699)" class="w-full mt-4 bg-secondary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        <button onclick="showPaymentModal('proposal-writing', 499)" class="w-full mt-4 bg-secondary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
                             Get Quote
                         </button>
                     </div>
 
-                    <!-- Service 3: Project Management & M&E -->
+                    <!-- Project Management & M&E -->
                     <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-tasks text-2xl text-accent mr-3"></i>
                             <h4 class="font-semibold text-lg">Project Management & M&E</h4>
                         </div>
-                        <div class="space-y-2 text-sm mb-4">
+                        <div class="space-y-2 text-xs mb-4">
                             <p>• Full project lifecycle</p>
                             <p>• Baseline/midline/endline</p>
                             <p>• Real-time dashboards</p>
-                            <p>• Impact assessments</p>
+                            <p>• Simplified tools for all levels</p>
                         </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Monthly retainer:</span>
-                                    <span class="font-bold text-accent">$1,499</span>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-sm">M&E framework only:</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-accent">$599</div>
+                                    <div>UGX 2,240,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Project-based:</span>
-                                    <span class="font-bold text-accent">$3,999+</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">Monthly retainer:</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-accent">$799</div>
+                                    <div>UGX 2,990,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">M&E framework only:</span>
-                                    <span class="font-bold text-accent">$899</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">Full project management:</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-accent">$1,999+</div>
+                                    <div>UGX 7,480,000+</div>
                                 </div>
                             </div>
                         </div>
-                        <button onclick="showPaymentModal('project-management', 1499)" class="w-full mt-4 bg-accent text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        <button onclick="showPaymentModal('project-management', 599)" class="w-full mt-4 bg-accent text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
                             Get Quote
                         </button>
                     </div>
 
-                    <!-- Service 4: Strategic & Business Planning -->
+                    <!-- Strategic & Business Planning -->
                     <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-chart-line text-2xl text-primary mr-3"></i>
                             <h4 class="font-semibold text-lg">Strategic & Business Planning</h4>
                         </div>
-                        <div class="space-y-2 text-sm mb-4">
+                        <div class="space-y-2 text-xs mb-4">
                             <p>• Strategic plan development</p>
                             <p>• Business plans & feasibility</p>
                             <p>• Market analysis</p>
-                            <p>• Sustainability strategies</p>
+                            <p>• Simple plans for startups</p>
                         </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">NGO strategic plan:</span>
-                                    <span class="font-bold text-primary">$1,299</span>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-sm">Small business plan:</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-primary">$399</div>
+                                    <div>UGX 1,490,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">SME business plan:</span>
-                                    <span class="font-bold text-primary">$899</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">NGO strategic plan:</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-primary">$799</div>
+                                    <div>UGX 2,990,000</div>
                                 </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Market feasibility:</span>
-                                    <span class="font-bold text-primary">$699</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm">Comprehensive strategy:</span>
+                                <div class="text-right text-xs">
+                                    <div class="font-bold text-primary">$1,299</div>
+                                    <div>UGX 4,860,000</div>
                                 </div>
                             </div>
                         </div>
-                        <button onclick="showPaymentModal('strategic-planning', 899)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        <button onclick="showPaymentModal('strategic-planning', 399)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
                             Get Quote
                         </button>
                     </div>
 
-                    <!-- Service 5: Capacity Building & Training -->
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-graduation-cap text-2xl text-secondary mr-3"></i>
-                            <h4 class="font-semibold text-lg">Capacity Building & Training</h4>
+                    <!-- Additional Services Cards -->
+                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
+                        <h4 class="font-semibold mb-2">Capacity Building & Training</h4>
+                        <p class="text-xs text-gray-600 mb-3">Skills development for all levels</p>
+                        <div class="text-center">
+                            <span class="font-bold text-secondary">$199 - $999</span>
+                            <div class="text-xs text-gray-600">UGX 745K - 3.7M</div>
                         </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Curriculum design</p>
-                            <p>• Leadership training</p>
-                            <p>• Workshop facilitation</p>
-                            <p>• Multilingual support</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Half-day workshop:</span>
-                                    <span class="font-bold text-secondary">$399</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Full-day training:</span>
-                                    <span class="font-bold text-secondary">$699</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Curriculum development:</span>
-                                    <span class="font-bold text-secondary">$1,299</span>
-                                </div>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('training', 399)" class="w-full mt-4 bg-secondary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
+                        <button onclick="showPaymentModal('training', 199)" class="w-full mt-3 bg-secondary text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
+                            Quote
                         </button>
                     </div>
 
-                    <!-- Service 6: Technical Editing & QA -->
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-edit text-2xl text-accent mr-3"></i>
-                            <h4 class="font-semibold text-lg">Technical Editing & QA</h4>
+                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
+                        <h4 class="font-semibold mb-2">Digital & Innovation Advisory</h4>
+                        <p class="text-xs text-gray-600 mb-3">Technology integration, simple digital tools</p>
+                        <div class="text-center">
+                            <span class="font-bold text-accent">$299 - $1,499</span>
+                            <div class="text-xs text-gray-600">UGX 1.1M - 5.6M</div>
                         </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Document editing</p>
-                            <p>• Quality assurance</p>
-                            <p>• Compliance checks</p>
-                            <p>• AI-integrated review</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Basic editing (per page):</span>
-                                    <span class="font-bold text-accent">$15</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Technical review:</span>
-                                    <span class="font-bold text-accent">$25</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Full QA system:</span>
-                                    <span class="font-bold text-accent">$1,499</span>
-                                </div>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('editing', 15)" class="w-full mt-4 bg-accent text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
+                        <button onclick="showPaymentModal('digital-advisory', 299)" class="w-full mt-3 bg-accent text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
+                            Quote
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Digital & Innovation Services -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-semibold mb-8 text-center text-secondary">Digital & Innovation Services (Services 7-13)</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                    <!-- Service 7: Digital & Innovation Advisory -->
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-digital-tachograph text-2xl text-primary mr-3"></i>
-                            <h4 class="font-semibold text-lg">Digital & Innovation Advisory</h4>
-                        </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Digital transformation</p>
-                            <p>• Data visualization</p>
-                            <p>• Innovation hub support</p>
-                            <p>• Blockchain solutions</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Digital assessment:</span>
-                                    <span class="font-bold text-primary">$899</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Dashboard development:</span>
-                                    <span class="font-bold text-primary">$1,999</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Full transformation:</span>
-                                    <span class="font-bold text-primary">$4,999+</span>
-                                </div>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('digital-advisory', 899)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
-                        </button>
-                    </div>
-
-                    <!-- Continue with remaining services... -->
-                    <!-- I'll provide a condensed version for space, but you can expand each service similarly -->
-
-                    <!-- Service 8: Stakeholder Engagement -->
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-handshake text-2xl text-secondary mr-3"></i>
-                            <h4 class="font-semibold text-lg">Stakeholder Engagement</h4>
-                        </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Engagement planning</p>
-                            <p>• Conflict resolution</p>
-                            <p>• Communication strategy</p>
-                            <p>• Virtual town halls</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="text-center">
-                                <span class="text-2xl font-bold text-secondary">$599 - $2,499</span>
-                                <p class="text-xs text-gray-600 mt-1">Based on scope</p>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('stakeholder-engagement', 599)" class="w-full mt-4 bg-secondary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
-                        </button>
-                    </div>
-
-                    <!-- Service 9: MEAL Services -->
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-chart-bar text-2xl text-accent mr-3"></i>
-                            <h4 class="font-semibold text-lg">MEAL Services</h4>
-                        </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• MEAL framework design</p>
-                            <p>• Learning workshops</p>
-                            <p>• Feedback mechanisms</p>
-                            <p>• AI trend detection</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="text-center">
-                                <span class="text-2xl font-bold text-accent">$1,299 - $3,999</span>
-                                <p class="text-xs text-gray-600 mt-1">Framework to full system</p>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('meal', 1299)" class="w-full mt-4 bg-accent text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
-                        </button>
-                    </div>
-
-                    <!-- Continue pattern for services 10-13 -->
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-seedling text-2xl text-primary mr-3"></i>
-                            <h4 class="font-semibold text-lg">Agribusiness Consultancy</h4>
-                        </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Value chain analysis</p>
-                            <p>• Market access facilitation</p>
-                            <p>• Climate-smart agriculture</p>
-                            <p>• Agritech solutions</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="text-center">
-                                <span class="text-2xl font-bold text-primary">$799 - $2,999</span>
-                                <p class="text-xs text-gray-600 mt-1">Analysis to full support</p>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('agribusiness', 799)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-gavel text-2xl text-secondary mr-3"></i>
-                            <h4 class="font-semibold text-lg">Policy Analysis & Advocacy</h4>
-                        </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Policy reviews</p>
-                            <p>• Impact assessments</p>
-                            <p>• Advocacy campaigns</p>
-                            <p>• Digital platforms</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="text-center">
-                                <span class="text-2xl font-bold text-secondary">$899 - $3,499</span>
-                                <p class="text-xs text-gray-600 mt-1">Review to campaign</p>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('policy', 899)" class="w-full mt-4 bg-secondary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-database text-2xl text-accent mr-3"></i>
-                            <h4 class="font-semibold text-lg">Data Management & Visualization</h4>
-                        </div>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Database design</p>
-                            <p>• Data analysis</p>
-                            <p>• Interactive dashboards</p>
-                            <p>• GIS mapping</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="text-center">
-                                <span class="text-2xl font-bold text-accent">$599 - $2,499</span>
-                                <p class="text-xs text-gray-600 mt-1">Basic to advanced</p>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('data-management', 599)" class="w-full mt-4 bg-accent text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Specialized Services -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-semibold mb-8 text-center text-accent">Specialized Services (Services 14-26)</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    
-                    <!-- Services 14-25 in compact format -->
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
-                        <h4 class="font-semibold mb-2">Environmental Consultancy</h4>
-                        <p class="text-sm text-gray-600 mb-3">Impact assessments, sustainability plans</p>
-                        <div class="text-center">
-                            <span class="font-bold text-primary">$899 - $2,499</span>
-                        </div>
-                        <button onclick="showPaymentModal('environmental', 899)" class="w-full mt-3 bg-primary text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
-                            Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
-                        <h4 class="font-semibold mb-2">Business Development</h4>
-                        <p class="text-sm text-gray-600 mb-3">Marketing, branding, CRM setup</p>
-                        <div class="text-center">
-                            <span class="font-bold text-secondary">$699 - $1,999</span>
-                        </div>
-                        <button onclick="showPaymentModal('business-dev', 699)" class="w-full mt-3 bg-secondary text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
-                            Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
-                        <h4 class="font-semibold mb-2">Organizational Development</h4>
-                        <p class="text-sm text-gray-600 mb-3">Capacity assessments, change management</p>
-                        <div class="text-center">
-                            <span class="font-bold text-accent">$799 - $2,299</span>
-                        </div>
-                        <button onclick="showPaymentModal('org-dev', 799)" class="w-full mt-3 bg-accent text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
-                            Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
-                        <h4 class="font-semibold mb-2">Technology Integration</h4>
-                        <p class="text-sm text-gray-600 mb-3">Digital literacy, ICT training</p>
-                        <div class="text-center">
-                            <span class="font-bold text-primary">$499 - $1,799</span>
-                        </div>
-                        <button onclick="showPaymentModal('tech-integration', 499)" class="w-full mt-3 bg-primary text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
-                            Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
-                        <h4 class="font-semibold mb-2">Risk Management</h4>
-                        <p class="text-sm text-gray-600 mb-3">Risk assessment, compliance audits</p>
-                        <div class="text-center">
-                            <span class="font-bold text-secondary">$899 - $2,499</span>
-                        </div>
-                        <button onclick="showPaymentModal('risk-management', 899)" class="w-full mt-3 bg-secondary text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
-                            Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
-                        <h4 class="font-semibold mb-2">Media Relations</h4>
-                        <p class="text-sm text-gray-600 mb-3">Press releases, social media strategy</p>
-                        <div class="text-center">
-                            <span class="font-bold text-accent">$399 - $1,299</span>
-                        </div>
-                        <button onclick="showPaymentModal('media-relations', 399)" class="w-full mt-3 bg-accent text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
-                            Quote
-                        </button>
-                    </div>
-
-                    <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-lg">
-                        <h4 class="font-semibold mb-2">Event Planning</h4>
-                        <p class="text-sm text-gray-600 mb-3">Workshops, conferences, facilitation</p>
-                        <div class="text-center">
-                            <span class="font-bold text-primary">$599 - $2,999</span>
-                        </div>
-                        <button onclick="showPaymentModal('event-planning', 599)" class="w-full mt-3 bg-primary text-white py-1 text-sm rounded hover:bg-opacity-90 transition-colors">
-                            Quote
-                        </button>
-                    </div>
-
-                    <!-- NEW SERVICE 26: Workplace Proposals -->
-                    <div class="bg-gradient-to-br from-primary/20 to-secondary/20 dark:from-primary/30 dark:to-secondary/30 p-6 rounded-xl shadow-lg border-2 border-primary">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-briefcase text-2xl text-primary mr-3"></i>
-                            <span class="bg-primary text-white text-xs px-2 py-1 rounded font-bold">NEW SERVICE</span>
-                        </div>
-                        <h4 class="font-semibold text-lg mb-3">Workplace & Operational Proposals</h4>
-                        <div class="space-y-2 text-sm mb-4">
-                            <p>• Problem-solving documents for management</p>
-                            <p>• Operational efficiency improvements</p>
-                            <p>• Workplace productivity enhancement</p>
-                            <p>• Sustainable organizational solutions</p>
-                        </div>
-                        <div class="border-t pt-4">
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Process improvement:</span>
-                                    <span class="font-bold text-primary">$699</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Policy proposals:</span>
-                                    <span class="font-bold text-primary">$1,299</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-sm">Full transformation plan:</span>
-                                    <span class="font-bold text-primary">$2,499</span>
-                                </div>
-                            </div>
-                        </div>
-                        <button onclick="showPaymentModal('workplace-proposals', 699)" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition-colors">
-                            Get Quote
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Package Deals -->
-            <div class="bg-gradient-to-r from-secondary/10 to-primary/10 p-8 rounded-xl">
-                <h3 class="text-2xl font-semibold text-center mb-6">Multi-Service Package Deals</h3>
+            <!-- Package Deals with UGX -->
+            <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold text-center mb-6">🎯 Multi-Service Package Deals (USD/UGX)</h3>
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="bg-white dark:bg-gray-700 p-6 rounded-lg text-center">
-                        <h4 class="font-bold text-lg mb-3 text-primary">Startup Package</h4>
-                        <p class="text-3xl font-bold text-primary mb-3">$2,999</p>
-                        <p class="text-sm mb-4">3 services of your choice</p>
-                        <p class="text-xs text-gray-600">Save 20% vs individual pricing</p>
-                        <button onclick="showPaymentModal('startup-package', 2999)" class="mt-4 bg-primary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        <h4 class="font-bold text-lg mb-3 text-primary">Agricultural Starter</h4>
+                        <div class="mb-3">
+                            <p class="text-3xl font-bold text-primary">$699</p>
+                            <p class="text-lg text-gray-600">UGX 2,615,000</p>
+                        </div>
+                        <p class="text-sm mb-4">Soil testing + Basic farm plan</p>
+                        <p class="text-xs text-gray-600">Save 30% vs individual pricing</p>
+                        <button onclick="showPaymentModal('agri-starter', 699)" class="mt-4 bg-primary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
                             Choose Package
                         </button>
                     </div>
                     <div class="bg-white dark:bg-gray-700 p-6 rounded-lg text-center border-2 border-secondary">
-                        <h4 class="font-bold text-lg mb-3 text-secondary">Growth Package</h4>
-                        <p class="text-3xl font-bold text-secondary mb-3">$4,999</p>
-                        <p class="text-sm mb-4">5 services + ongoing support</p>
-                        <p class="text-xs text-gray-600">Save 25% vs individual pricing</p>
-                        <button onclick="showPaymentModal('growth-package', 4999)" class="mt-4 bg-secondary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        <h4 class="font-bold text-lg mb-3 text-secondary">Professional Suite</h4>
+                        <div class="mb-3">
+                            <p class="text-3xl font-bold text-secondary">$1,999</p>
+                            <p class="text-lg text-gray-600">UGX 7,480,000</p>
+                        </div>
+                        <p class="text-sm mb-4">5 professional services + support</p>
+                        <p class="text-xs text-gray-600">Save 35% vs individual pricing</p>
+                        <button onclick="showPaymentModal('professional-suite', 1999)" class="mt-4 bg-secondary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
                             Choose Package
                         </button>
                     </div>
                     <div class="bg-white dark:bg-gray-700 p-6 rounded-lg text-center">
-                        <h4 class="font-bold text-lg mb-3 text-accent">Enterprise Package</h4>
-                        <p class="text-3xl font-bold text-accent mb-3">$8,999</p>
-                        <p class="text-sm mb-4">10 services + priority support</p>
-                        <p class="text-xs text-gray-600">Save 30% vs individual pricing</p>
-                        <button onclick="showPaymentModal('enterprise-package', 8999)" class="mt-4 bg-accent text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        <h4 class="font-bold text-lg mb-3 text-accent">Complete Solution</h4>
+                        <div class="mb-3">
+                            <p class="text-3xl font-bold text-accent">$3,999</p>
+                            <p class="text-lg text-gray-600">UGX 14,960,000</p>
+                        </div>
+                        <p class="text-sm mb-4">Agricultural + Professional services</p>
+                        <p class="text-xs text-gray-600">Save 40% vs individual pricing</p>
+                        <button onclick="showPaymentModal('complete-solution', 3999)" class="mt-4 bg-accent text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
                             Choose Package
                         </button>
                     </div>
@@ -762,7 +958,47 @@
         </div>
     </section>
 
-    <!-- Payment Modal (keep existing modal code) -->
+    <!-- Updated About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">🌍 About KANEDI Agri-Stra-Tech Consultants</h2>
+                <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg mb-8">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                        KANEDI Agri-Stra-Tech Consultants Ltd. (KASTC) is a <strong>women- and youth-led consulting firm</strong> based in Uganda, dedicated to transforming agriculture, land management, education, and livelihoods through science, innovation, and sustainability.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">
+                        We specialize not only in <strong>Soil Testing, Farm Planning, Land Suitability & Use Planning, GIS Services, and Disaster Risk Assessment</strong>, but also in a wide range of research, grant proposal development, consulting, and advisory services.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">
+                        Our expertise supports <strong>academicians, professionals, businesses, institutions, industries, and individuals—including those with limited or no formal education—</strong>by equipping them with practical, knowledge-based solutions that drive growth, resilience, and success.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">
+                        As a women- and youth-driven enterprise, KANEDI is committed to inclusive development, ensuring that women, youth, and marginalized groups actively participate in agricultural innovation, education, and enterprise growth.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                        <h4 class="font-semibold text-primary mb-2 text-xl">🌟 Our Mission</h4>
+                        <p class="text-gray-600 dark:text-gray-300">To empower farmers, communities, and organizations with science-driven agricultural, land management, and GIS-based solutions that enhance productivity, build resilience against climate risks, and promote sustainable use of natural resources.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                        <h4 class="font-semibold text-primary mb-2 text-xl">🔭 Our Vision</h4>
+                        <p class="text-gray-600 dark:text-gray-300">To be a leading African agri-strategy and technology-consulting firm, driving climate-smart, innovative, and sustainable agricultural systems that secure livelihoods, restore ecosystems, and contribute to global food security.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-xl">
+                    <p class="text-center text-gray-700 dark:text-gray-300 italic text-lg">
+                        "At KANEDI, we believe that knowledge, planning, and innovation are the foundations of sustainable development. By combining local expertise with global best practices, we deliver farmer-centered, community-focused, and client-tailored solutions that enhance productivity, build resilience, and open opportunities for prosperity."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
     <div id="payment-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
         <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl max-w-md w-full mx-4 max-h-96 overflow-y-auto">
             <div class="flex justify-between items-center mb-6">
@@ -828,42 +1064,19 @@
         </div>
     </div>
 
-    <!-- Keep existing About, AI Consultation, Contact, and Footer sections -->
-    <!-- About Section (Condensed) -->
-    <section id="about" class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">About KANEDI</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                    Ugandan women- and youth-led firm with 10+ years of experience empowering communities through inclusive, tech-driven, evidence-based strategies across agriculture, education, health, digital innovation, and business.
-                </p>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
-                        <h4 class="font-semibold text-primary mb-2">Our Vision</h4>
-                        <p class="text-sm text-gray-600 dark:text-gray-300">To be a leading catalyst for sustainable and inclusive development in Africa through innovative, people-centered consultancy solutions.</p>
-                    </div>
-                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
-                        <h4 class="font-semibold text-primary mb-2">Our Mission</h4>
-                        <p class="text-sm text-gray-600 dark:text-gray-300">To empower communities, institutions, and individuals by delivering tailored consultancy services that combine research, innovation, and ethical practices.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- AI Consultation Section -->
     <section id="consultation" class="py-16 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">AI-Powered Multi-Sector Consultation</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">🤖 AI-Powered Agricultural & Professional Consultation</h2>
                 <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8">
                     <div class="mb-6">
                         <h3 class="text-xl font-semibold mb-4 flex items-center">
                             <i class="fas fa-robot text-primary mr-3"></i>
-                            Get Expert Advice Across All Our 26 Service Areas
+                            Get Expert Advice Across All Our Agricultural & Professional Services
                         </h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Leverage our AI consultant for guidance on all our services including our new workplace proposals service.
+                            Leverage our AI consultant for guidance on soil testing, farm planning, research, and all our professional services. Get advice tailored for all education levels.
                         </p>
                     </div>
                     
@@ -872,19 +1085,23 @@
                             <label for="consultation-service" class="block text-sm font-medium mb-2">Select Service Area</label>
                             <select id="consultation-service" class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent">
                                 <option value="">Choose a service area...</option>
-                                <option value="research">Research & Academic Writing</option>
-                                <option value="proposals">Proposal Writing & Grants</option>
-                                <option value="project-management">Project Management & M&E</option>
-                                <option value="strategic-planning">Strategic & Business Planning</option>
-                                <option value="capacity-building">Capacity Building & Training</option>
-                                <option value="digital-innovation">Digital & Innovation Advisory</option>
-                                <option value="agriculture">Agribusiness & Agricultural Consultancy</option>
-                                <option value="meal">MEAL Services</option>
-                                <option value="data-management">Data Management & Visualization</option>
-                                <option value="policy">Policy Analysis & Advocacy</option>
-                                <option value="sustainability">Environmental & Sustainability</option>
-                                <option value="health">Public Health & Community Outreach</option>
-                                <option value="workplace-proposals">NEW: Workplace & Operational Proposals (Problem-solving documents)</option>
+                                <optgroup label="🌱 Agricultural Services">
+                                    <option value="soil-testing">🌱 Soil Testing Services</option>
+                                    <option value="farm-planning">🌾 Farm Planning Services</option>
+                                    <option value="land-suitability">🌍 Land Suitability & Use Planning</option>
+                                    <option value="disaster-risk">⚠️ Disaster Risk Assessment</option>
+                                    <option value="gis-services">🗺️ GIS Services</option>
+                                </optgroup>
+                                <optgroup label="📚 Professional Services">
+                                    <option value="research">Research & Academic Writing</option>
+                                    <option value="proposals">Proposal Writing & Grants</option>
+                                    <option value="project-management">Project Management & M&E</option>
+                                    <option value="strategic-planning">Strategic & Business Planning</option>
+                                    <option value="capacity-building">Capacity Building & Training</option>
+                                    <option value="digital-advisory">Digital & Innovation Advisory</option>
+                                    <option value="data-management">Data Management & Visualization</option>
+                                    <option value="environmental">Environmental Consultancy</option>
+                                </optgroup>
                                 <option value="general">General Multi-Sector Advice</option>
                             </select>
                         </div>
@@ -893,7 +1110,7 @@
                             <label for="consultation-question" class="block text-sm font-medium mb-2">Your Question</label>
                             <textarea 
                                 id="consultation-question" 
-                                placeholder="Describe your challenge, project needs, or question in detail..."
+                                placeholder="Describe your agricultural challenge, research needs, or professional question in detail. We support all education levels - from basic questions to advanced technical issues..."
                                 class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent h-32 resize-vertical"
                             ></textarea>
                         </div>
@@ -917,7 +1134,7 @@
                             <div id="ai-response" class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg prose prose-sm max-w-none dark:prose-invert">
                                 <div class="flex items-center space-x-2">
                                     <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
-                                    <span>Getting expert multi-sector advice...</span>
+                                    <span>Getting expert agricultural and professional advice...</span>
                                 </div>
                             </div>
                         </div>
@@ -930,36 +1147,51 @@
     <!-- Contact Section -->
     <section id="contact" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">📞 Contact Us - Let's Partner to Make a Difference</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
                 <div>
                     <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
                             <div class="bg-primary/10 p-3 rounded-lg">
-                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <i class="fas fa-phone text-primary"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold">Office Address</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Wandegeya Market, Mulondo Road 2<br>North Wing, 1st Floor, Room: NFF 007<br>Kampala, Uganda</p>
+                                <h4 class="font-semibold">📞 Call / WhatsApp</h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    +256 772 864 371<br>
+                                    +256 753 864 371<br>
+                                    +256 726 150 979<br>
+                                    +256 753 313 431
+                                </p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="bg-secondary/10 p-3 rounded-lg">
-                                <i class="fas fa-phone text-secondary"></i>
+                                <i class="fas fa-envelope text-secondary"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold">Phone / WhatsApp</h4>
-                                <p class="text-gray-600 dark:text-gray-300">+256 772 864 371<br>+256 753 864 371<br>+256 726 150 979</p>
+                                <h4 class="font-semibold">✉️ Emails</h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    kanediagristratechconsltd@gmail.com<br>
+                                    edith.kangabe@gmail.com
+                                </p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="bg-accent/10 p-3 rounded-lg">
-                                <i class="fas fa-envelope text-accent"></i>
+                                <i class="fas fa-map-marker-alt text-accent"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold">Email & PayPal</h4>
-                                <p class="text-gray-600 dark:text-gray-300">kanediagristratechconsltd@gmail.com<br>edith.kangabe@gmail.com</p>
+                                <h4 class="font-semibold">📍 Office Locations</h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    <strong>Location 1:</strong><br>
+                                    Wandegeya Market, Mulondo Road 2<br>
+                                    North Wing, 1st Floor, Room: NFF 007<br>
+                                    Kampala, Uganda<br><br>
+                                    <strong>Location 2:</strong><br>
+                                    Remote | Online
+                                </p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
@@ -967,9 +1199,8 @@
                                 <i class="fas fa-globe text-primary"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold">Website & Social Media</h4>
+                                <h4 class="font-semibold">🔗 Social Media</h4>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    <a href="https://kastc.ct.ws" target="_blank" class="text-primary hover:underline">kastc.ct.ws</a><br>
                                     Facebook: KANEDI Agri-Stra-Tech<br>
                                     LinkedIn: Edith Kangabe<br>
                                     Twitter/Instagram: @AgriStraTechLtd
@@ -981,6 +1212,7 @@
                 
                 <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg">
                     <h3 class="text-xl font-semibold mb-6">Send us a Message</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">We're just one message away. Reach out now and let's start something impactful.</p>
                     <form id="contact-form" class="space-y-4">
                         <div class="grid md:grid-cols-2 gap-4">
                             <input type="text" placeholder="First Name" class="text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
@@ -990,19 +1222,30 @@
                         <input type="tel" placeholder="Phone Number" class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
                         <select class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent">
                             <option value="">Service of Interest</option>
-                            <option value="research">Research & Academic Writing</option>
-                            <option value="proposals">Proposal Writing & Grants</option>
-                            <option value="project-management">Project Management & M&E</option>
-                            <option value="strategic-planning">Strategic & Business Planning</option>
-                            <option value="agriculture">Agribusiness & Agricultural Consultancy</option>
-                            <option value="digital">Digital & Innovation Advisory</option>
-                            <option value="workplace-proposals">NEW: Workplace Proposals & Operational Solutions</option>
-                            <option value="multiple">Multiple Services</option>
+                            <optgroup label="🌱 Agricultural Services">
+                                <option value="soil-testing">🌱 Soil Testing Services</option>
+                                <option value="farm-planning">🌾 Farm Planning Services</option>
+                                <option value="land-suitability">🌍 Land Suitability & Use Planning</option>
+                                <option value="disaster-risk">⚠️ Disaster Risk Assessment</option>
+                                <option value="gis-services">🗺️ GIS Services</option>
+                            </optgroup>
+                            <optgroup label="📚 Professional Services">
+                                <option value="research">Research & Academic Writing</option>
+                                <option value="proposals">Proposal Writing & Grants</option>
+                                <option value="project-management">Project Management & M&E</option>
+                                <option value="digital">Digital & Innovation Advisory</option>
+                                <option value="multiple">Multiple Services</option>
+                            </optgroup>
                         </select>
-                        <textarea placeholder="Tell us about your project, research needs, or consultation requirements..." class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent h-32 resize-vertical"></textarea>
-                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
-                            Send Message
-                        </button>
+                        <textarea placeholder="Tell us about your agricultural needs, research requirements, or consultation needs. We support all education levels and provide simplified solutions..." class="w-full text-base p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-600 focus:ring-2 focus:ring-primary focus:border-transparent h-32 resize-vertical"></textarea>
+                        <div class="flex gap-4">
+                            <button type="submit" class="flex-1 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                                👉 Get in Touch
+                            </button>
+                            <button type="button" onclick="showAlert('For a free quote, please select a service and fill out the contact form, or call us directly at +256 772 864 371')" class="flex-1 bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                                👉 Request Free Quote
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -1016,23 +1259,23 @@
                 <div class="col-span-2">
                     <div class="flex items-center space-x-3 mb-4">
                         <div class="relative">
-                            <!-- Logo-inspired design -->
-                            <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center relative overflow-hidden">
+                            <!-- Agricultural-focused logo design -->
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center relative overflow-hidden">
                                 <div class="absolute top-0 right-0 w-6 h-6 bg-accent rounded-full opacity-80"></div>
                                 <div class="z-10 flex items-center justify-center">
-                                    <span class="text-white font-bold text-xs">KASTC</span>
+                                    <i class="fas fa-seedling text-white text-lg"></i>
                                 </div>
                                 <div class="absolute bottom-1 left-1 right-1 h-2 bg-secondary rounded opacity-60"></div>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-primary">KANEDI</h3>
-                            <p class="text-sm text-secondary font-medium">AGRI-STRA-TECH CONSULTANTS SMC LTD</p>
+                            <h3 class="text-xl font-bold text-primary">KanediAgri App</h3>
+                            <p class="text-sm text-secondary font-medium">KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD</p>
                             <p class="text-xs text-gray-400 italic">'Grow Smart, Live Green'</p>
                         </div>
                     </div>
-                    <p class="text-gray-400 mb-4">Empowering Ideas | Transforming Communities | Delivering Impact</p>
-                    <p class="text-gray-400 mb-4 text-sm">Ugandan women- and youth-led firm with 10+ years of experience in multi-sector consulting.</p>
+                    <p class="text-gray-400 mb-4">Transforming Agriculture Through Science & Innovation</p>
+                    <p class="text-gray-400 mb-4 text-sm">Women- and youth-led consulting firm with passionate experts in agronomy, GIS, education, and development consulting, committed to ensuring that farmers thrive, businesses grow, and communities achieve long-term sustainability.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-facebook text-xl"></i></a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-twitter text-xl"></i></a>
@@ -1041,32 +1284,29 @@
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Key Services</h4>
+                    <h4 class="text-lg font-semibold mb-4">🌱 Agricultural Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#pricing" class="hover:text-white transition-colors">🌱 Soil Testing Services</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">🌾 Farm Planning Services</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">🌍 Land Suitability Planning</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">⚠️ Disaster Risk Assessment</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">🗺️ GIS Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">📚 Professional Services</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
                         <li><a href="#pricing" class="hover:text-white transition-colors">Research & Academic Writing</a></li>
                         <li><a href="#pricing" class="hover:text-white transition-colors">Proposal Writing & Grants</a></li>
                         <li><a href="#pricing" class="hover:text-white transition-colors">Project Management & M&E</a></li>
                         <li><a href="#pricing" class="hover:text-white transition-colors">Digital Innovation</a></li>
-                        <li><a href="#pricing" class="hover:text-white transition-colors">Agricultural Consultancy</a></li>
-                        <li><a href="#pricing" class="hover:text-white transition-colors">NEW: Workplace Proposals</a></li>
-                        <li><a href="#pricing" class="hover:text-white transition-colors">View All 26 Services</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
-                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing & Packages</a></li>
-                        <li><a href="#consultation" class="hover:text-white transition-colors">AI Consultation</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
-                        <li><a href="https://kastc.ct.ws" target="_blank" class="hover:text-white transition-colors">Website</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">View All 30+ Services</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2024 KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD. All rights reserved.</p>
-                <p class="text-sm mt-2">Empowering Ideas | Transforming Communities | Delivering Impact</p>
+                <p class="text-sm mt-2">Transforming Agriculture Through Science & Innovation</p>
             </div>
         </div>
     </footer>
@@ -1127,37 +1367,36 @@
             const modal = document.getElementById('payment-modal');
             const detailsDiv = document.getElementById('payment-details');
             
-            // Enhanced package names mapping including new service
+            // Calculate UGX equivalent
+            const ugxPrice = Math.round(price * 3740);
+            
+            // Enhanced package names mapping for agricultural services
             const packageNames = {
+                'soil-testing': '🌱 Soil Testing Services',
+                'farm-planning': '🌾 Farm Planning Services',
+                'land-suitability': '🌍 Land Suitability & Use Planning',
+                'disaster-risk': '⚠️ Disaster Risk Assessment',
+                'gis-services': '🗺️ GIS Services',
                 'research-writing': 'Research & Academic Writing Service',
                 'proposal-writing': 'Proposal Writing & Grants Service',
                 'project-management': 'Project Management & M&E Service',
                 'strategic-planning': 'Strategic & Business Planning Service',
                 'training': 'Capacity Building & Training Service',
-                'editing': 'Technical Editing & QA Service',
                 'digital-advisory': 'Digital & Innovation Advisory Service',
-                'stakeholder-engagement': 'Stakeholder Engagement Service',
-                'meal': 'MEAL Services',
-                'agribusiness': 'Agribusiness & Agricultural Consultancy',
-                'policy': 'Policy Analysis & Advocacy Service',
                 'data-management': 'Data Management & Visualization',
                 'environmental': 'Environmental & Sustainability Consultancy',
-                'business-dev': 'Business Development & Marketing Support',
-                'org-dev': 'Organizational Development Service',
-                'tech-integration': 'Technology Integration & Digital Literacy',
-                'risk-management': 'Risk Management & Compliance Service',
-                'media-relations': 'Communication & Media Relations',
-                'event-planning': 'Event Planning & Facilitation',
-                'workplace-proposals': 'Workplace Proposals & Operational Solutions',
-                'startup-package': 'Startup Package (3 Services)',
-                'growth-package': 'Growth Package (5 Services)',
-                'enterprise-package': 'Enterprise Package (10 Services)'
+                'agri-starter': 'Agricultural Starter Package',
+                'professional-suite': 'Professional Services Suite',
+                'complete-solution': 'Complete Agricultural & Professional Solution'
             };
             
             detailsDiv.innerHTML = `
                 <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                     <h4 class="font-semibold text-lg mb-2">${packageNames[packageType] || 'KANEDI Service'}</h4>
-                    <div class="text-2xl font-bold text-primary">$${price.toLocaleString()}</div>
+                    <div class="mb-2">
+                        <div class="text-2xl font-bold text-primary">$${price.toLocaleString()}</div>
+                        <div class="text-lg text-gray-600">UGX ${ugxPrice.toLocaleString()}</div>
+                    </div>
                     <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">50% down payment required to start</p>
                 </div>
             `;
@@ -1185,9 +1424,14 @@
         });
 
         function showMobileMoneyInstructions() {
+            const ugxAmount = Math.round(currentPrice * 0.5 * 3740);
             showAlert(`Mobile Money Payment Instructions:
             
-1. Send 50% down payment (${(currentPrice * 0.5).toLocaleString()} USD equivalent in UGX) to:
+1. Send 50% down payment:
+   • USD: $${(currentPrice * 0.5).toLocaleString()}
+   • UGX: ${ugxAmount.toLocaleString()}
+   
+Send to:
    • MTN Mobile Money: +256 753 864 371
    • Airtel Money: +256 753 313 431
 
@@ -1213,13 +1457,15 @@ Please contact us at:
 Include:
 • Selected service: ${currentPackage}
 • Your contact details
-• Preferred currency
+• Preferred currency (USD/UGX)
 
+Service cost: $${currentPrice.toLocaleString()} / UGX ${Math.round(currentPrice * 3740).toLocaleString()}
 We support transfers in USD, EUR, GBP, and UGX.`);
             closePaymentModal();
         }
 
         function contactForPayment() {
+            const ugxPrice = Math.round(currentPrice * 3740);
             showAlert(`Contact Our Team:
 
 For questions about the ${currentPackage} service or alternative payment methods:
@@ -1235,11 +1481,12 @@ We can arrange:
 • Installment plans
 • Other regional payment methods
 
-Selected service: ${currentPackage} - $${currentPrice.toLocaleString()}`);
+Selected service: ${currentPackage}
+Cost: $${currentPrice.toLocaleString()} / UGX ${ugxPrice.toLocaleString()}`);
             closePaymentModal();
         }
 
-        // AI Consultation Handler (keep existing)
+        // AI Consultation Handler
         if (window.Poe) {
             window.Poe.registerHandler("kanedi-consultation", (result, context) => {
                 const responseContainer = document.getElementById('ai-response');
@@ -1255,7 +1502,7 @@ Selected service: ${currentPackage} - $${currentPrice.toLocaleString()}`);
             });
         }
 
-        // AI Consultation Form Handler (enhanced with new service)
+        // AI Consultation Form Handler 
         document.getElementById('ask-ai-btn').addEventListener('click', async () => {
             const service = document.getElementById('consultation-service').value;
             const question = document.getElementById('consultation-question').value.trim();
@@ -1273,44 +1520,44 @@ Selected service: ${currentPackage} - $${currentPrice.toLocaleString()}`);
             responseDiv.innerHTML = `
                 <div class="flex items-center space-x-2">
                     <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
-                    <span>Getting expert multi-sector advice from KANEDI...</span>
+                    <span>Getting expert agricultural and professional advice from KANEDI...</span>
                 </div>
             `;
 
-            let prompt = `@Claude-Sonnet-4 You are an expert multi-sector consultant from KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD, a Ugandan women- and youth-led consultancy firm with 10+ years of experience. `;
+            let prompt = `@Claude-Sonnet-4 You are an expert agricultural and multi-sector consultant from KANEDI AGRI-STRA-TECH CONSULTANTS SMC LTD, a Ugandan women- and youth-led consultancy firm specializing in sustainable agriculture, land management, GIS services, and comprehensive professional services. You support academicians, professionals, businesses, institutions, industries, and individuals—including those with limited or no formal education. `;
             
             if (service) {
                 const serviceMap = {
-                    'research': 'research and academic writing services',
-                    'proposals': 'proposal writing and grants support',
-                    'project-management': 'project management and monitoring & evaluation',
-                    'strategic-planning': 'strategic and business planning',
-                    'capacity-building': 'capacity building and training services',
-                    'digital-innovation': 'digital innovation and technology advisory',
-                    'agriculture': 'agribusiness and agricultural consultancy',
-                    'meal': 'MEAL (Monitoring, Evaluation, Accountability & Learning)',
-                    'data-management': 'data management and visualization',
-                    'policy': 'policy analysis and advocacy',
-                    'sustainability': 'environmental sustainability consultancy',
-                    'health': 'public health and community outreach',
-                    'workplace-proposals': 'workplace and operational proposals - practical, problem-solving documents designed to convince management, boards, or funders to adopt workplace improvements, enhance efficiency, and create sustainable organizational solutions (our newest 26th service)',
-                    'general': 'multi-sector consulting across all our service areas'
+                    'soil-testing': 'soil testing services - scientific soil analysis for pH, nutrients, fertility, farmer-friendly reports and recommendations',
+                    'farm-planning': 'farm planning services - comprehensive resource assessment, crop rotation, irrigation design, financial planning, and farm calendar development',
+                    'land-suitability': 'land suitability and use planning - topographic surveying, climate assessment, GIS mapping, zoning, and sustainable land use planning',
+                    'disaster-risk': 'disaster risk assessment - vulnerability mapping, climate resilience, mitigation strategies, preparedness planning, and building resilience against droughts, floods, and climate shocks',
+                    'gis-services': 'GIS services - farm mapping, spatial analysis, remote sensing, precision farming support, and data-driven agricultural decision making',
+                    'research': 'research and academic writing services - supporting all education levels from basic to advanced',
+                    'proposals': 'proposal writing and grants support - donor-aligned proposals for all sectors',
+                    'project-management': 'project management and monitoring & evaluation - with simplified tools for all levels',
+                    'strategic-planning': 'strategic and business planning - from simple business plans to comprehensive strategies',
+                    'capacity-building': 'capacity building and training services - skills development for all levels',
+                    'digital-advisory': 'digital innovation and technology advisory - including simple digital solutions',
+                    'data-management': 'data management and visualization - making data accessible for all levels',
+                    'environmental': 'environmental sustainability consultancy - practical eco-friendly solutions',
+                    'general': 'multi-sector consulting across all our agricultural and professional service areas'
                 };
                 prompt += `The consultation is specifically about ${serviceMap[service]}. `;
             }
             
-            prompt += `Our company offers 26 services including research & academic writing, proposal writing & grants, project management & M&E, strategic planning, capacity building, digital innovation, agribusiness consultancy, MEAL services, data management, policy analysis, environmental consultancy, public health, workplace proposals & operational solutions (our newest 26th service), and more.
+            prompt += `Our company offers comprehensive services including our main agricultural solutions (soil testing, farm planning, land suitability planning, disaster risk assessment, GIS services) and professional services (research & academic writing, proposal writing & grants, project management & M&E, strategic planning, capacity building, digital innovation, data management, environmental consultancy, and more). We serve clients at all education levels with tailored approaches.
 
             Please provide expert advice for: ${question}
 
-            Structure your response as a professional KANEDI consultant would:
+            Structure your response as a professional KANEDI agricultural and professional consultant would:
             1. Situation Analysis
             2. Specific Recommendations 
             3. KANEDI Value-Add Approaches
             4. Implementation Steps
             5. Expected Outcomes
 
-            Emphasize our strengths: women & youth-led, multilingual services, digital innovation, evidence-based approaches, and 10+ years experience across East Africa.`;
+            Emphasize our strengths: women & youth-led, agricultural expertise, scientific soil testing, GIS technology, climate-smart solutions, evidence-based approaches, comprehensive professional services, and support for all education levels including simplified solutions for those with limited formal education.`;
 
             try {
                 if (window.Poe) {
@@ -1321,10 +1568,10 @@ Selected service: ${currentPackage} - $${currentPrice.toLocaleString()}`);
                     });
                 } else {
                     responseDiv.innerHTML = `
-                        <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
-                            <h5 class="font-semibold text-blue-800 dark:text-blue-200 mb-2">Sample KANEDI Consultation Response</h5>
-                            <p class="text-blue-700 dark:text-blue-300">Thank you for your consultation request about "${service ? service.replace('-', ' ') : 'multi-sector consulting'}". Our expert team would analyze your specific needs and provide comprehensive recommendations.</p>
-                            <p class="text-blue-700 dark:text-blue-300 mt-2">For full AI consultation capabilities with our 26 services expertise, please use this app in the Poe platform environment.</p>
+                        <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg">
+                            <h5 class="font-semibold text-green-800 dark:text-green-200 mb-2">Sample KANEDI Agricultural Consultation Response</h5>
+                            <p class="text-green-700 dark:text-green-300">Thank you for your consultation request about "${service ? service.replace('-', ' ') : 'agricultural and professional services'}". Our expert team would analyze your specific needs and provide comprehensive agricultural and professional recommendations tailored to your education level and experience.</p>
+                            <p class="text-green-700 dark:text-green-300 mt-2">For full AI consultation capabilities with our agricultural and professional services expertise, please use this app in the Poe platform environment.</p>
                         </div>
                     `;
                 }
@@ -1336,7 +1583,7 @@ Selected service: ${currentPackage} - $${currentPrice.toLocaleString()}`);
         // Contact form handler
         document.getElementById('contact-form').addEventListener('submit', (e) => {
             e.preventDefault();
-            showAlert('Thank you for your message! The KANEDI team will get back to you within 24 hours.');
+            showAlert('Thank you for your message! The KANEDI team will get back to you within 24 hours. We support clients at all education levels and provide solutions tailored to your needs.');
             e.target.reset();
         });
 
@@ -1372,3 +1619,4 @@ Selected service: ${currentPackage} - $${currentPrice.toLocaleString()}`);
     </script>
 </body>
 </html>
+html 14
